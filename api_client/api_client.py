@@ -8,7 +8,7 @@ class APIClient:
     def __init__(self, client: Client):
         """
         Базовый API клиент, принимающий объект httpx.Client.
-        :param client: экземпляр httpx.Client для выполнения HTTP-запросов
+        :param client: Экземпляр httpx.Client для выполнения HTTP-запросов
         """
         self.client = client
 

@@ -4,6 +4,16 @@ from api_client.api_client import APIClient
 from api_client.private_http_builder import AuthenticationUserDict, get_private_http_client
 
 
+class File(TypedDict):
+    """
+    Описание структуры объекта File
+    """
+    id: str
+    filename: str
+    directory: str
+    url: str
+
+
 class UploadFileRequestDict(TypedDict):
     """
     Описание структуры запроса на создание файла.
@@ -11,6 +21,13 @@ class UploadFileRequestDict(TypedDict):
     filename: str
     directory: str
     upload_file: str
+
+
+class UploadFileResponseDict(TypedDict):
+    """
+    Описание структуры ответа при загрузке файла
+    """
+    file: File
 
 
 class FilesClient(APIClient):
@@ -41,6 +58,15 @@ class FilesClient(APIClient):
             data=request,
             files={"upload_file": open(request["upload_file"], "rb")},
         )
+
+    def upload_file(self, request: UploadFileRequestDict) -> UploadFileResponseDict:
+        """
+        Метод загрузки файла с возвратом ответа в виде json
+        :param request: Словарь с filename, directory, upload_file.
+        :return: Ответ от сервера в виде json объекта
+        """
+        response = self.upload_file_api(request=request)
+        return response.json()
 
 
 def get_private_file_client(user: AuthenticationUserDict) -> FilesClient:

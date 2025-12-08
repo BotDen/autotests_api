@@ -1,9 +1,25 @@
-from typing import Any, TypedDict
+from typing import TypedDict
 
-from httpx import Response, URL
+from httpx import Response
 
 from api_client.api_client import APIClient
+from api_client.files.files_client import File
 from api_client.private_http_builder import AuthenticationUserDict, get_private_http_client
+from api_client.users.public_users_client import UserDict
+
+
+class Course(TypedDict):
+    """
+    Описание структуры объекта Course
+    """
+    id: str
+    title: str
+    maxScore: int
+    minScore: int
+    description: str
+    previewFile: File
+    estimatedTime: str
+    createdByUser: UserDict
 
 
 class GetCoursesQueryRequestDict(TypedDict):
@@ -24,6 +40,13 @@ class CreateCourseRequestDict(TypedDict):
     estimatedTime: str | None
     previewFileId: str
     createdByUserId: str
+
+
+class CreatedCourseResponseDict(TypedDict):
+    """
+    Описание структуры ответа при создании курса
+    """
+    course: Course
 
 
 class UpdateCourseRequestDict(TypedDict):
@@ -52,7 +75,7 @@ class CoursesClient(APIClient):
 
     def create_course_api(self, request: CreateCourseRequestDict) -> Response:
         """
-
+        Метод создания курса
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime,
         previewFileId, createdByUserId.
         :return: Ответ от сервера в виде объекта httpx.Response
@@ -83,6 +106,16 @@ class CoursesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.delete(url=f"api/v1/courses/{course_id}")
+
+    def create_course(self, request: CreateCourseRequestDict) -> CreatedCourseResponseDict:
+        """
+        Метод создания курса возвращающий объект json
+        :param request: Словарь с title, maxScore, minScore, description, estimatedTime,
+        previewFileId, createdByUserId.
+        :return: Ответ от сервера в виде json
+        """
+        response = self.create_course_api(request=request)
+        return response.json()
 
 
 def get_private_courses_client(user: AuthenticationUserDict) -> CoursesClient:

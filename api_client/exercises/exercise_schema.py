@@ -1,6 +1,7 @@
 from pydantic import Field
 
 from api_client.base_pydantic_model import BasePydanticModel
+from tools.fakers import fake
 
 
 class ExerciseSchema(BasePydanticModel):
@@ -28,13 +29,13 @@ class CreateExerciseRequestSchema(BasePydanticModel):
     """
     Описание структуры запроса создание упражнения
     """
-    title: str
+    title: str = Field(default_factory=fake.get_sentence)
     course_id:  str = Field(alias="courseId")
-    max_score: int | None = Field(alias="maxScore")
-    min_score: int | None = Field(alias="minScore")
+    max_score: int | None = Field(alias="maxScore", default_factory=fake.get_max_score)
+    min_score: int | None = Field(alias="minScore", default_factory=fake.get_min_score)
     order_index: int | None = Field(alias="orderIndex")
-    description: str
-    estimated_time: str | None = Field(alias="estimatedTime")
+    description: str = Field(default_factory=fake.get_text)
+    estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.get_estimated_time)
 
 
 class ExerciseResponseSchema(BasePydanticModel):
@@ -48,9 +49,9 @@ class UpdateExerciseRequestSchema(BasePydanticModel):
     """
     Описание структуры запроса на обновление упражнения
     """
-    title: str | None
-    max_score: int | None = Field(alias="maxScore")
-    min_score: int | None = Field(alias="minScore")
-    order_index: int | None = Field(alias="orderIndex")
-    description: str | None
-    estimated_time: str | None = Field(alias="estimatedTime")
+    title: str | None = Field(default_factory=fake.get_sentence)
+    max_score: int | None = Field(alias="maxScore", default_factory=fake.get_max_score)
+    min_score: int | None = Field(alias="minScore", default_factory=fake.get_min_score)
+    order_index: int | None = Field(alias="orderIndex", default_factory=fake.get_uuid)
+    description: str | None = Field(default_factory=fake.get_text)
+    estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.get_estimated_time)

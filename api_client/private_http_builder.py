@@ -1,12 +1,12 @@
 from httpx import Client
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 
 from api_client.authentication.authentication_client import get_authentication_client
 from api_client.authentication.authentication_schema import LoginRequestSchema
 
 
 class AuthenticationUserSchema(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 

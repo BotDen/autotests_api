@@ -5,6 +5,7 @@ from api_client.public_http_builder import get_public_http_client
 from api_client.users.user_schema import CreateUserRequestSchema, CreateUserResponseSchema
 
 
+
 class PublicUsersClient(APIClient):
     """
     Клиент для работы с api/v1/users

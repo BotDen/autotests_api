@@ -38,7 +38,7 @@ class CreateExerciseRequestSchema(BasePydanticModel):
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.get_estimated_time)
 
 
-class ExerciseResponseSchema(BasePydanticModel):
+class CreateExerciseResponseSchema(BasePydanticModel):
     """
     Описание структуры ответа при создании упражнения
     """

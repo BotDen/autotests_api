@@ -22,7 +22,7 @@ def function_course(
     courses_client: CoursesClient,
     function_user: UserFixture,
     function_file: FileFixture,
-):
+) -> CourseFixture:
     request = CreateCourseRequestSchema(
         previewFileId=function_file.response.file.id,
         createdByUserId=function_user.resource.user.id,

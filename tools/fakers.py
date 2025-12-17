@@ -14,8 +14,13 @@ class Fake:
     def get_middle_name(self) -> str:
         return self.faker.middle_name()
 
-    def get_email(self) -> str:
-        return self.faker.email()
+    def get_email(self, domain: str | None = None) -> str:
+        """
+        Метод получения случайного email
+        :param domain: Если домен не передан, то будет подставлен случайный домен
+        :return: Возвращает адрес электронной почты
+        """
+        return self.faker.email(domain=domain)
 
     def get_password(self) -> str:
         return self.faker.password()

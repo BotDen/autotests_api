@@ -45,6 +45,10 @@ class PrivateUsersClient(APIClient):
         response = self.get_user_api(user_id)
         return GetUserResponseSchema.model_validate_json(response.text)
 
+    def get_user_me(self) -> GetUserResponseSchema:
+        response = self.get_user_me_api()
+        return GetUserResponseSchema.model_validate_json(response.text)
+
 
 def get_private_users_client(user: AuthenticationUserSchema) -> PrivateUsersClient:
     """

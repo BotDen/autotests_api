@@ -11,7 +11,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url=f"/api/v1/file/{file_id}")
+        return self.get(url=f"/api/v1/files/{file_id}")
 
     def delete_file_api(self, file_id: str) -> Response:
         """
@@ -19,7 +19,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(url=f"/api/v1/file/{file_id}")
+        return self.delete(url=f"/api/v1/files/{file_id}")
 
     def upload_file_api(self, request: UploadFileRequestSchema) -> Response:
         """

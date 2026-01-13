@@ -19,10 +19,10 @@ def assert_create_user_response(request: CreateUserRequestSchema, response: Crea
 
 def assert_user(actual: UserSchema, expected: UserSchema):
     """
-
-    :param actual:
-    :param expected:
-    :raises AssertionError:
+    Проверка, что данные созданного пользователя соответствуют входным данным
+    :param actual: Фактические данные пользователя
+    :param expected: Ожидаемые данные пользователя
+    :raises AssertionError: Если хотя бы одно поле не совпало
     """
     assert_equal(actual=actual.id, expected=expected.id, name="id")
     assert_equal(actual=actual.email, expected=expected.email, name="email")
@@ -34,4 +34,10 @@ def assert_get_user_response(
     get_user_response: GetUserResponseSchema,
     create_user_response: CreateUserResponseSchema
 ):
+    """
+    Проверка, что ответ на получение пользователя корректный
+    :param get_user_response: Ответ полученные на запрос пользователя
+    :param create_user_response: Ответ полученные при создании пользователя
+    :return:
+    """
     assert_user(actual=get_user_response.user, expected=create_user_response.user)

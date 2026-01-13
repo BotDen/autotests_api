@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Sized
 
 
 def assert_status_code(actual: int, expected: int):
@@ -14,6 +14,7 @@ def assert_status_code(actual: int, expected: int):
         f"Фактический статус код: {actual} "
     )
 
+
 def assert_equal(actual: Any, expected: Any, name: str):
     """
     Базовый метод проверки фактического значения с ожидаемым
@@ -28,6 +29,7 @@ def assert_equal(actual: Any, expected: Any, name: str):
         f"Фактическое значение {expected} "
     )
 
+
 def assert_is_true(actual: Any, name: str):
     """
     Проверка, что фактическое значение является истинным
@@ -38,4 +40,20 @@ def assert_is_true(actual: Any, name: str):
     assert actual, (
         f"Некорректное значение: {name} "
         f"Ожидалось true но получено false"
+    )
+
+
+def assert_lens(actual: Sized, expected: Sized, name: str):
+    """
+    Проверяет, что длины двух объектов совпадают.
+
+    :param name: Название проверяемого объекта.
+    :param actual: Фактический объект.
+    :param expected: Ожидаемый объект.
+    :raises AssertionError: Если длины не совпадают.
+    """
+    assert len(actual) == len(expected), (
+        f"Некорректная длина объекта {name} "
+        f"Фактическая длина объекта: {len(actual)} "
+        f"Ожидаемая длина объекта: {len(expected)} "
     )

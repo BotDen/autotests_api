@@ -28,3 +28,7 @@ class UploadFileResponseSchema(BasePydanticModel):
     Описание структуры ответа при загрузке файла
     """
     file: FileSchema
+
+
+class GetFileResponseSchema(BasePydanticModel):
+    file: FileSchema

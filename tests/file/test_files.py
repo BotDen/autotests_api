@@ -25,7 +25,7 @@ class TestsFiles:
         response_data = UploadFileResponseSchema.model_validate_json(response.text)
 
         assert_status_code(response.status_code, HTTPStatus.OK)
-        assert_upload_file_response(request, response_data)
+        assert_upload_file_response(response_data, request)
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 

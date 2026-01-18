@@ -10,7 +10,7 @@ from api_client.users.user_schema import CreateUserRequestSchema, CreateUserResp
 
 class UserFixture(BasePydanticModel):
     request: CreateUserRequestSchema
-    resource: CreateUserResponseSchema
+    response: CreateUserResponseSchema
 
     @property
     def email(self) -> EmailStr:
@@ -34,7 +34,7 @@ def public_client() -> PublicUsersClient:
 def function_user(public_client: PublicUsersClient) -> UserFixture:
     request = CreateUserRequestSchema()
     response = public_client.create_user(request)
-    return UserFixture(request=request, resource=response)
+    return UserFixture(request=request, response=response)
 
 
 @pytest.fixture

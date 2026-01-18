@@ -56,3 +56,17 @@ class UpdateCourseRequestSchema(BasePydanticModel):
     min_score: int | None = Field(alias="minScore", default_factory=fake.get_min_score)
     description: str | None = Field(default_factory=fake.get_text)
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.get_estimated_time)
+
+
+class UpdateCourseResponseSchema(BasePydanticModel):
+    """
+    Описание структуры ответа при обновлении курса
+    """
+    course: CourseSchema
+
+
+class GetCoursesResponseSchema(BasePydanticModel):
+    """
+    Описание структуры запроса на получения списка курсов
+    """
+    courses: list[CourseSchema]

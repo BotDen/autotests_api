@@ -36,6 +36,6 @@ class TestUser:
         response = private_user_client.get_user_me_api()
         assert_status_code(actual=response.status_code, expected=HTTPStatus.OK)
         response_schema = GetUserResponseSchema.model_validate_json(response.text)
-        assert_get_user_response(response_schema, function_user.resource)
+        assert_get_user_response(response_schema, function_user.response)
 
         validate_json_schema(instance=response.json(), schema=response_schema.model_json_schema())

@@ -18,7 +18,7 @@ class ExerciseSchema(BasePydanticModel):
     estimated_time: str = Field(alias="estimatedTime")
 
 
-class ExercisesQueryRequestSchema(BasePydanticModel):
+class GetExercisesRequestSchema(BasePydanticModel):
     """
     Описание структуры запроса на получение списка упражнений
     """
@@ -33,7 +33,7 @@ class CreateExerciseRequestSchema(BasePydanticModel):
     course_id:  str = Field(alias="courseId")
     max_score: int | None = Field(alias="maxScore", default_factory=fake.get_max_score)
     min_score: int | None = Field(alias="minScore", default_factory=fake.get_min_score)
-    order_index: int | None = Field(alias="orderIndex")
+    order_index: int | None = Field(alias="orderIndex", default_factory=fake.get_integer)
     description: str = Field(default_factory=fake.get_text)
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.get_estimated_time)
 
@@ -42,7 +42,7 @@ class CreateExerciseResponseSchema(BasePydanticModel):
     """
     Описание структуры ответа при создании упражнения
     """
-    exercise: list[ExerciseSchema]
+    exercise: ExerciseSchema
 
 
 class UpdateExerciseRequestSchema(BasePydanticModel):
@@ -52,6 +52,20 @@ class UpdateExerciseRequestSchema(BasePydanticModel):
     title: str | None = Field(default_factory=fake.get_sentence)
     max_score: int | None = Field(alias="maxScore", default_factory=fake.get_max_score)
     min_score: int | None = Field(alias="minScore", default_factory=fake.get_min_score)
-    order_index: int | None = Field(alias="orderIndex", default_factory=fake.get_uuid)
+    order_index: int | None = Field(alias="orderIndex", default_factory=fake.get_integer)
     description: str | None = Field(default_factory=fake.get_text)
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.get_estimated_time)
+
+
+class UpdateExerciseResponseSchema(BasePydanticModel):
+    """
+    Описание структуры ответа на обновление упражнения
+    """
+    exercise: ExerciseSchema
+
+
+class GetExercisesResponseSchema(BasePydanticModel):
+    """
+    Описание структуры ответа на запрос упражнений
+    """
+    exercises: list[ExerciseSchema]

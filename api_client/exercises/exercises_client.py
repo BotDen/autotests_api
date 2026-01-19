@@ -4,7 +4,7 @@ from api_client.api_client import APIClient
 from api_client.exercises.exercise_schema import (
     CreateExerciseRequestSchema,
     CreateExerciseResponseSchema,
-    ExercisesQueryRequestSchema,
+    GetExercisesRequestSchema,
     UpdateExerciseRequestSchema,
 )
 from api_client.private_http_builder import AuthenticationUserSchema, get_private_http_client
@@ -14,7 +14,7 @@ class ExercisesClient(APIClient):
     """
     Клиент для работы с api/v1/exercises
     """
-    def get_exercises_api(self, query: ExercisesQueryRequestSchema) -> Response:
+    def get_exercises_api(self, query: GetExercisesRequestSchema) -> Response:
         """
         Метод получения списка упражнений в курсе
         :param query: ID курса
@@ -55,7 +55,7 @@ class ExercisesClient(APIClient):
         """
         return self.delete(url=f"/api/v1/exercises/{exercise_id}")
 
-    def get_exercises(self, request: ExercisesQueryRequestSchema) -> CreateExerciseResponseSchema:
+    def get_exercises(self, request: GetExercisesRequestSchema) -> CreateExerciseResponseSchema:
         """
         Метод получения упражнений с возвратом объекта в виде json
         :param request: ID курса

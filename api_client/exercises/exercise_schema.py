@@ -69,3 +69,10 @@ class GetExercisesResponseSchema(BasePydanticModel):
     Описание структуры ответа на запрос упражнений
     """
     exercises: list[ExerciseSchema]
+
+
+class GetExerciseResponseSchema(BasePydanticModel):
+    """
+    Описывает структуру ответа на запрос упражнения
+    """
+    exercise: ExerciseSchema

@@ -4,7 +4,8 @@ import pytest
 
 from api_client.courses.course_schema import (
     CreateCourseRequestSchema,
-    CreatedCourseResponseSchema, GetCoursesQueryRequestSchema,
+    CreatedCourseResponseSchema,
+    GetCoursesQueryRequestSchema,
     GetCoursesResponseSchema,
     UpdateCourseRequestSchema,
     UpdateCourseResponseSchema,

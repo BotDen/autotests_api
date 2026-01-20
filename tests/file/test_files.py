@@ -7,6 +7,9 @@ from api_client.errors_schema import InternalErrorResponseSchema, ValidationErro
 from api_client.files.file_schema import GetFileResponseSchema, UploadFileRequestSchema, UploadFileResponseSchema
 from api_client.files.files_client import FilesClient
 from fixtures.files import FileFixture
+from tools.allure.epic import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.file import (
@@ -22,9 +25,12 @@ from tools.assertions.schema import validate_json_schema
 
 @pytest.mark.files
 @pytest.mark.regression
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.FILES)
 class TestsFiles:
     @allure.title("Upload file")
     @allure.tag(AllureTag.CREATE_ENTITY)
+    @allure.story(AllureStory.CREATE_ENTITY)
     def test_upload_file(self, files_client: FilesClient):
         request = UploadFileRequestSchema(upload_file="./test_data/files/chubaka.jpg")
         response = files_client.upload_file_api(request)

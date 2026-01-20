@@ -15,6 +15,8 @@ from api_client.courses.courses_client import CoursesClient
 from fixtures.courses import CourseFixture
 from fixtures.files import FileFixture
 from fixtures.users import UserFixture
+from tools.allure.epic import AllureEpic
+from tools.allure.features import AllureFeature
 from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import (
@@ -27,6 +29,8 @@ from tools.assertions.schema import validate_json_schema
 
 @pytest.mark.courses
 @pytest.mark.regression
+@allure.epic(AllureEpic.ADMINISTRATION)
+@allure.feature(AllureFeature.COURSES)
 class TestCourses:
     @allure.title("Update course")
     @allure.tag(AllureTag.UPDATE_ENTITY)

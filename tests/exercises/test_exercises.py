@@ -16,6 +16,8 @@ from api_client.exercises.exercise_schema import (
 from api_client.exercises.exercises_client import ExercisesClient
 from fixtures.courses import CourseFixture
 from fixtures.exercises import ExerciseFixture
+from tools.allure.epic import AllureEpic
+from tools.allure.features import AllureFeature
 from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.exercises import (
@@ -30,6 +32,8 @@ from tools.assertions.schema import validate_json_schema
 
 @pytest.mark.exercises
 @pytest.mark.regression
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.EXERCISES)
 class TestExercises:
     @allure.title("Create exercise")
     @allure.tag(AllureTag.CREATE_ENTITY)

@@ -3,6 +3,8 @@ from http import HTTPStatus
 import allure
 
 from fixtures.users import UserFixture
+from tools.allure.epic import AllureEpic
+from tools.allure.features import AllureFeature
 from tools.allure.tags import AllureTag
 from tools.fakers import fake
 
@@ -18,6 +20,8 @@ from tools.assertions.user import assert_create_user_response, assert_get_user_r
 
 @pytest.mark.users
 @pytest.mark.regression
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.USERS)
 class TestUser:
     @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
     @allure.tag(AllureTag.CREATE_ENTITY)

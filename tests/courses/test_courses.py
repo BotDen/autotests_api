@@ -2,6 +2,7 @@ from http import HTTPStatus
 
 import allure
 import pytest
+from allure_commons.types import Severity
 
 from api_client.courses.course_schema import (
     CreateCourseRequestSchema,
@@ -30,10 +31,13 @@ from tools.assertions.schema import validate_json_schema
 @pytest.mark.courses
 @pytest.mark.regression
 @allure.epic(AllureEpic.ADMINISTRATION)
+@allure.parent_suite(AllureEpic.ADMINISTRATION)
 @allure.feature(AllureFeature.COURSES)
+@allure.suite(AllureFeature.COURSES)
 class TestCourses:
     @allure.title("Update course")
     @allure.tag(AllureTag.UPDATE_ENTITY)
+    @allure.severity(Severity.NORMAL)
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
         # Формируем данные для обновления
         request = UpdateCourseRequestSchema()
@@ -52,6 +56,7 @@ class TestCourses:
 
     @allure.title("Get courses")
     @allure.tag(AllureTag.GET_ENTITY)
+    @allure.severity(Severity.BLOCKER)
     def test_get_courses(
         self,
         courses_client: CoursesClient,
@@ -75,6 +80,7 @@ class TestCourses:
 
     @allure.title("Create course")
     @allure.tag(AllureTag.CREATE_ENTITY)
+    @allure.severity(Severity.CRITICAL)
     def test_create_course(
         self,
         courses_client: CoursesClient,

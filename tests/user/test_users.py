@@ -16,15 +16,19 @@ from api_client.users.user_schema import CreateUserRequestSchema, CreateUserResp
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
 from tools.assertions.user import assert_create_user_response, assert_get_user_response
+from allure_commons.types import Severity
 
 
 @pytest.mark.users
 @pytest.mark.regression
 @allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.USERS)
+@allure.suite(AllureFeature.USERS)
 class TestUser:
     @pytest.mark.parametrize("email", ["mail.ru", "gmail.com", "example.com"])
     @allure.tag(AllureTag.CREATE_ENTITY)
+    @allure.severity(Severity.BLOCKER)
     def test_create_user_with_valid_data(self, email: str, public_client: PublicUsersClient):
         allure.dynamic.title(f"Create user with {email}")
         request = CreateUserRequestSchema(email=fake.get_email(domain=email))
@@ -38,6 +42,7 @@ class TestUser:
 
     @allure.title("Get user me")
     @allure.tag(AllureTag.GET_ENTITY)
+    @allure.severity(Severity.CRITICAL)
     def test_get_user_me(
         self,
         private_user_client: PrivateUsersClient,

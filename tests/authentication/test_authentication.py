@@ -2,6 +2,7 @@ from http import HTTPStatus
 
 import allure
 import pytest
+from allure_commons.types import Severity
 
 from api_client.authentication.authentication_client import AuthenticationClient
 from api_client.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema
@@ -19,10 +20,14 @@ from tools.assertions.schema import validate_json_schema
 @pytest.mark.regression
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.AUTHENTICATION)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.AUTHENTICATION)
 class TestAuthentication:
     @allure.title("Login with valid credentials")
     @allure.tag(AllureTag.VALIDATE_ENTITY)
     @allure.story(AllureStory.LOGIN)
+    @allure.sub_suite(AllureStory.LOGIN)
+    @allure.severity(Severity.BLOCKER)
     def test_login(self, function_user: UserFixture, authentication_client: AuthenticationClient):
         authentication_user = LoginRequestSchema(
             email=function_user.email,

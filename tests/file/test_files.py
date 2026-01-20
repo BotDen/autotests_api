@@ -1,15 +1,19 @@
 from http import HTTPStatus
 
+import allure
 import pytest
 
 from api_client.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema
 from api_client.files.file_schema import GetFileResponseSchema, UploadFileRequestSchema, UploadFileResponseSchema
 from api_client.files.files_client import FilesClient
 from fixtures.files import FileFixture
+from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.file import (
-    assert_file_not_found_response, assert_get_file_response,
-    assert_get_file_with_incorrect_file_id_response, assert_upload_file_response,
+    assert_file_not_found_response,
+    assert_get_file_response,
+    assert_get_file_with_incorrect_file_id_response,
+    assert_upload_file_response,
     assert_upload_file_with_empty_directory_response,
     assert_upload_file_with_empty_filename_response,
 )
@@ -19,6 +23,8 @@ from tools.assertions.schema import validate_json_schema
 @pytest.mark.files
 @pytest.mark.regression
 class TestsFiles:
+    @allure.title("Upload file")
+    @allure.tag(AllureTag.CREATE_ENTITY)
     def test_upload_file(self, files_client: FilesClient):
         request = UploadFileRequestSchema(upload_file="./test_data/files/chubaka.jpg")
         response = files_client.upload_file_api(request)
@@ -29,6 +35,8 @@ class TestsFiles:
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 
+    @allure.title("Get file")
+    @allure.tag(AllureTag.GET_ENTITIES)
     def test_get_file(self, files_client: FilesClient, function_file: FileFixture):
         response = files_client.get_file_api(function_file.response.file.id)
         response_data = GetFileResponseSchema.model_validate_json(response.text)
@@ -38,6 +46,8 @@ class TestsFiles:
 
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 
+    @allure.title("Upload file with empty file name")
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
     def test_upload_file_with_empty_filename(self, files_client: FilesClient):
         request = UploadFileRequestSchema(
             filename="",
@@ -54,6 +64,8 @@ class TestsFiles:
         # Дополнительная проверка структуры JSON, чтобы убедиться, что схема валидационного ответа не изменилась
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 
+    @allure.title("Upload file with empty directory")
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
     def test_upload_file_with_empty_directory(self, files_client: FilesClient):
         request = UploadFileRequestSchema(
             directory="",
@@ -70,6 +82,8 @@ class TestsFiles:
         # Дополнительная проверка структуры JSON, чтобы убедиться, что схема валидационного ответа не изменилась
         validate_json_schema(instance=response.json(), schema=response_data.model_json_schema())
 
+    @allure.title("Delete file")
+    @allure.tag(AllureTag.DELETE_ENTITY)
     def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
         # 1. Удаляем файл
         delete_response = files_client.delete_file_api(function_file.response.file.id)
@@ -88,6 +102,8 @@ class TestsFiles:
         # 6. Проверяем, что ответ соответствует схеме
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
+    @allure.title("Get file with incorrect file id")
+    @allure.tag(AllureTag.VALIDATE_ENTITY)
     def test_get_file_with_incorrect_file_id(self, files_client: FilesClient, function_file: FileFixture):
         # 1. Запрос файла с невалидным айди
         response = files_client.get_file_api("incorrect_file_id")

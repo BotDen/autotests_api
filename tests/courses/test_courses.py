@@ -1,5 +1,6 @@
 from http import HTTPStatus
 
+import allure
 import pytest
 
 from api_client.courses.course_schema import (
@@ -14,6 +15,7 @@ from api_client.courses.courses_client import CoursesClient
 from fixtures.courses import CourseFixture
 from fixtures.files import FileFixture
 from fixtures.users import UserFixture
+from tools.allure.tags import AllureTag
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import (
     assert_create_course_response,
@@ -26,6 +28,8 @@ from tools.assertions.schema import validate_json_schema
 @pytest.mark.courses
 @pytest.mark.regression
 class TestCourses:
+    @allure.title("Update course")
+    @allure.tag(AllureTag.UPDATE_ENTITY)
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
         # Формируем данные для обновления
         request = UpdateCourseRequestSchema()
@@ -42,6 +46,8 @@ class TestCourses:
         # Валидация json схемы ответа
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.title("Get courses")
+    @allure.tag(AllureTag.GET_ENTITY)
     def test_get_courses(
         self,
         courses_client: CoursesClient,
@@ -63,6 +69,8 @@ class TestCourses:
         # Проверяем соответствие JSON-ответ схеме
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.title("Create course")
+    @allure.tag(AllureTag.CREATE_ENTITY)
     def test_create_course(
         self,
         courses_client: CoursesClient,

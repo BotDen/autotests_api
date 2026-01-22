@@ -1,3 +1,4 @@
+import allure
 from httpx import Response
 from api_client.api_client import APIClient
 from api_client.files.file_schema import UploadFileRequestSchema, UploadFileResponseSchema
@@ -5,6 +6,7 @@ from api_client.private_http_builder import AuthenticationUserSchema, get_privat
 
 
 class FilesClient(APIClient):
+    @allure.step("Get file by file_id {file_id}")
     def get_file_api(self, file_id: str) -> Response:
         """
         Метод получения файла.
@@ -13,6 +15,7 @@ class FilesClient(APIClient):
         """
         return self.get(url=f"/api/v1/files/{file_id}")
 
+    @allure.step("Delete file by file_id {file_id}")
     def delete_file_api(self, file_id: str) -> Response:
         """
         Метод удаления файла.
@@ -21,6 +24,7 @@ class FilesClient(APIClient):
         """
         return self.delete(url=f"/api/v1/files/{file_id}")
 
+    @allure.step("Upload file")
     def upload_file_api(self, request: UploadFileRequestSchema) -> Response:
         """
         Метод создания файла.

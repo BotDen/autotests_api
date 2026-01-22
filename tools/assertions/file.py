@@ -1,3 +1,5 @@
+import allure
+
 from api_client.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema, ValidationErrorSchema
 from api_client.files.file_schema import (
     FileSchema,
@@ -9,6 +11,7 @@ from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
 
 
+@allure.step("Check upload file response")
 def assert_upload_file_response(
     actual: UploadFileResponseSchema,
     expected: UploadFileRequestSchema,
@@ -25,6 +28,7 @@ def assert_upload_file_response(
     assert_equal(actual.file.directory, expected.directory, "directory")
 
 
+@allure.step("Check file")
 def assert_file(actual: FileSchema, expected: FileSchema):
     """
     Проверка атрибутов файла
@@ -38,6 +42,7 @@ def assert_file(actual: FileSchema, expected: FileSchema):
     assert_equal(actual.directory, expected.directory, "directory")
 
 
+@allure.step("Check get file response")
 def assert_get_file_response(
     get_file_response: GetFileResponseSchema,
     upload_file_response: UploadFileResponseSchema,
@@ -51,6 +56,7 @@ def assert_get_file_response(
     assert_file(get_file_response.file, upload_file_response.file)
 
 
+@allure.step("Check upload file with empty filename response")
 def assert_upload_file_with_empty_filename_response(actual: ValidationErrorResponseSchema):
     """
     Проверяет, что ответ на создание файла с пустым именем файла соответствует ожидаемой валидационной ошибке.
@@ -72,6 +78,7 @@ def assert_upload_file_with_empty_filename_response(actual: ValidationErrorRespo
     assert_validation_error_response(actual, expected_error)
 
 
+@allure.step("Check upload file with empty directory response")
 def assert_upload_file_with_empty_directory_response(actual: ValidationErrorResponseSchema):
     """
     Проверяет, что ответ на создание файла с пустым значением директории соответствует ожидаемой валидационной ошибке.
@@ -93,6 +100,7 @@ def assert_upload_file_with_empty_directory_response(actual: ValidationErrorResp
     assert_validation_error_response(actual, expected_error)
 
 
+@allure.step("Check file not found response")
 def assert_file_not_found_response(actual: InternalErrorResponseSchema):
     """
     Функция для проверки ошибки, если файл не найден на сервере.
@@ -106,6 +114,7 @@ def assert_file_not_found_response(actual: InternalErrorResponseSchema):
     assert_internal_error_response(actual, expected)
 
 
+@allure.step("Check get file with incorrect file_if response")
 def assert_get_file_with_incorrect_file_id_response(actual: ValidationErrorResponseSchema):
     """
     Функция для проверки ошибки, при запросе файла с невалидным id
@@ -121,8 +130,10 @@ def assert_get_file_with_incorrect_file_id_response(actual: ValidationErrorRespo
                 message="Input should be a valid UUID, invalid character: expected an optional prefix of "
                         "`urn:uuid:` followed by [0-9a-fA-F-], found `i` at 1",
                 input="incorrect_file_id",
-                context={"error": "invalid character: expected an optional prefix of `urn:uuid:`"
-                                  " followed by [0-9a-fA-F-], found `i` at 1"}
+                context={
+                    "error": "invalid character: expected an optional prefix of `urn:uuid:`"
+                             " followed by [0-9a-fA-F-], found `i` at 1",
+                },
             ),
         ],
     )

@@ -6,6 +6,7 @@ from pydantic import EmailStr
 from api_client.authentication.authentication_client import get_authentication_client
 from api_client.authentication.authentication_schema import LoginRequestSchema
 from api_client.base_pydantic_model import BasePydanticModel
+from api_client.event_hooks import curl_event_hooks
 
 
 class AuthenticationUserSchema(BasePydanticModel, frozen=True):
@@ -30,5 +31,6 @@ def get_private_http_client(user: AuthenticationUserSchema) -> Client:
     return Client(
         timeout=5,
         base_url="http://localhost:8000",
-        headers={"Authorization": f"Bearer {login_response.token.access_token}"}
+        headers={"Authorization": f"Bearer {login_response.token.access_token}"},
+        event_hooks={"request": [curl_event_hooks]},
     )

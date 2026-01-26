@@ -7,6 +7,7 @@ from api_client.files.file_schema import (
     UploadFileRequestSchema,
     UploadFileResponseSchema,
 )
+from config import settings
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_internal_error_response, assert_validation_error_response
 
@@ -22,7 +23,7 @@ def assert_upload_file_response(
     :param expected: Тело ответа после загрузки файла
     :raises AssertionError: Если хотя бы одно поле не совпало
     """
-    expect_url = f"http://localhost:8000/static/{expected.directory}/{expected.filename}"
+    expect_url = f"{settings.http_client.client_url}static/{expected.directory}/{expected.filename}"
     assert_equal(str(actual.file.url), expect_url, "url")
     assert_equal(actual.file.filename, expected.filename, "filename")
     assert_equal(actual.file.directory, expected.directory, "directory")

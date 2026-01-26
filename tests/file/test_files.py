@@ -6,6 +6,7 @@ import pytest
 from api_client.errors_schema import InternalErrorResponseSchema, ValidationErrorResponseSchema
 from api_client.files.file_schema import GetFileResponseSchema, UploadFileRequestSchema, UploadFileResponseSchema
 from api_client.files.files_client import FilesClient
+from config import settings
 from fixtures.files import FileFixture
 from tools.allure.epic import AllureEpic
 from tools.allure.features import AllureFeature
@@ -37,7 +38,7 @@ class TestsFiles:
     @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.severity(Severity.CRITICAL)
     def test_upload_file(self, files_client: FilesClient):
-        request = UploadFileRequestSchema(upload_file="./test_data/files/chubaka.jpg")
+        request = UploadFileRequestSchema(upload_file=settings.test_data.file_path)
         response = files_client.upload_file_api(request)
         response_data = UploadFileResponseSchema.model_validate_json(response.text)
 
@@ -64,7 +65,7 @@ class TestsFiles:
     def test_upload_file_with_empty_filename(self, files_client: FilesClient):
         request = UploadFileRequestSchema(
             filename="",
-            upload_file="./test_data/files/chubaka.jpg",
+            upload_file=settings.test_data.file_path,
         )
         response = files_client.upload_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
@@ -83,7 +84,7 @@ class TestsFiles:
     def test_upload_file_with_empty_directory(self, files_client: FilesClient):
         request = UploadFileRequestSchema(
             directory="",
-            upload_file="./test_data/files/chubaka.jpg",
+            upload_file=settings.test_data.file_path,
         )
         response = files_client.upload_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)

@@ -1,4 +1,4 @@
-from pydantic import Field, HttpUrl
+from pydantic import Field, FilePath, HttpUrl
 
 from api_client.base_pydantic_model import BasePydanticModel
 from tools.fakers import fake
@@ -20,7 +20,7 @@ class UploadFileRequestSchema(BasePydanticModel):
     """
     filename: str = Field(default_factory=fake.get_uuid)
     directory: str = Field(default="test_data")
-    upload_file: str
+    upload_file: FilePath
 
 
 class UploadFileResponseSchema(BasePydanticModel):

@@ -7,6 +7,10 @@ from api_client.users.user_schema import (
     UserSchema,
 )
 from tools.assertions.base import assert_equal
+from tools.logger import get_logger
+
+
+logger = get_logger("USER_ASSERTIONS")
 
 
 @allure.step("Check create user response")
@@ -17,6 +21,7 @@ def assert_create_user_response(request: CreateUserRequestSchema, response: Crea
     :param response: Фактический ответ после создания пользователя
     :raises AssertionError: Если хотя бы одно поле не совпадет
     """
+    logger.info("Check create user response")
     assert_equal(actual=response.user.email, expected=request.email, name="email")
     assert_equal(actual=response.user.first_name, expected=request.first_name, name="first_name")
     assert_equal(actual=response.user.last_name, expected=request.last_name, name="last_name")
@@ -31,6 +36,7 @@ def assert_user(actual: UserSchema, expected: UserSchema):
     :param expected: Ожидаемые данные пользователя
     :raises AssertionError: Если хотя бы одно поле не совпало
     """
+    logger.info("Check user")
     assert_equal(actual=actual.id, expected=expected.id, name="id")
     assert_equal(actual=actual.email, expected=expected.email, name="email")
     assert_equal(actual=actual.first_name, expected=expected.first_name, name="first_name")
@@ -49,4 +55,5 @@ def assert_get_user_response(
     :param create_user_response: Ответ полученные при создании пользователя
     :return:
     """
+    logger.info("Check get user response")
     assert_user(actual=get_user_response.user, expected=create_user_response.user)

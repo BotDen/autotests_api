@@ -1,6 +1,6 @@
 from httpx import Client
 
-from api_client.event_hooks import curl_event_hooks
+from api_client.event_hooks import curl_event_hooks, log_request_event_hook, log_response_event_hook
 from config import settings
 
 
@@ -12,5 +12,8 @@ def get_public_http_client() -> Client:
     return Client(
         timeout=settings.http_client.timeout,
         base_url=settings.http_client.client_url,
-        event_hooks={"request": [curl_event_hooks]},
+        event_hooks={
+            "request": [curl_event_hooks, log_request_event_hook],
+            "response": [log_response_event_hook],
+        },
     )

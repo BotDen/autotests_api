@@ -2,8 +2,7 @@ from concurrent import futures
 
 import grpc
 
-import course_service_pb2
-import course_service_pb2_grpc
+from exampels import course_service_pb2, course_service_pb2_grpc
 
 
 class CourseServiceServicer(course_service_pb2_grpc.CourseServiceServicer):

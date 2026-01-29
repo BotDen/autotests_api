@@ -3,6 +3,7 @@ from httpx import Response
 from api_client.api_client import APIClient
 from api_client.files.file_schema import UploadFileRequestSchema, UploadFileResponseSchema
 from api_client.private_http_builder import AuthenticationUserSchema, get_private_http_client
+from tools.routes import APIRoutes
 
 
 class FilesClient(APIClient):
@@ -13,7 +14,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url=f"/api/v1/files/{file_id}")
+        return self.get(url=f"{APIRoutes.FILES}/{file_id}")
 
     @allure.step("Delete file by file_id {file_id}")
     def delete_file_api(self, file_id: str) -> Response:
@@ -22,7 +23,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(url=f"/api/v1/files/{file_id}")
+        return self.delete(url=f"{APIRoutes.FILES}/{file_id}")
 
     @allure.step("Upload file")
     def upload_file_api(self, request: UploadFileRequestSchema) -> Response:
@@ -32,7 +33,7 @@ class FilesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            url=f"/api/v1/files",
+            url=f"{APIRoutes.FILES}",
             data=request.model_dump(by_alias=True, exclude={"upload_file"}),
             files={"upload_file": request.upload_file.read_bytes()},
         )

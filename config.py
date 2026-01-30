@@ -29,15 +29,13 @@ class Settings(BaseSettings):
     http_client: HTTPClientConfig
     allure_results_dir: DirectoryPath  # Добавили новое поле
 
-    # # Добавляем метод инициализации
-    # @classmethod
-    # def initialize(cls) -> Self:  # Возвращает объект класса Settings
-    #     allure_results_dir = DirectoryPath("./allure-results")  # Создаем объект пути к папке
-    #     allure_results_dir.mkdir(exist_ok=True)  # Создаем папку allure-results, если она не существует
-    #
-    #     return Settings(allure_results_dir=allure_results_dir)
+    # Добавляем метод инициализации
+    @classmethod
+    def initialize(cls) -> Self:  # Возвращает объект класса Settings
+        allure_results_dir = DirectoryPath("./allure-results")  # Создаем объект пути к папке
+        allure_results_dir.mkdir(exist_ok=True)  # Создаем папку allure-results, если она не существует
+
+        return Settings(allure_results_dir=allure_results_dir)
 
 
 settings = Settings()
-settings.allure_results_dir.mkdir(exist_ok=True)
-print(settings)

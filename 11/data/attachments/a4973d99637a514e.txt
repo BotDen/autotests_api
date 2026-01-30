@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjUzLjI2NzEwOSIsInVzZXJfaWQiOiI5ZjI0NWFjYy03MWYyLTQ0NWItYmYzNC01MDJkYTVhMGY5ZWQifQ.mC0SA0cS055PqR82kc7ME6hGc96rfrRvccgFOUY_KVo'\
+-H 'content-length: 659'\
+-H 'content-type: application/json'\
+-d '{"title":"Выражение основание порог волк куча демократия выражение.","maxScore":59,"minScore":48,"description":"Командование светило ярко поезд конференция падать. Спорт карандаш деньги умирать материя остановить.\nХозяйка прощение каюта ныне волк демократия коричневый. Монета жестокий а мотоцикл ученый.","estimatedTime":"8 week","previewFileId":"d1ae5405-d470-47de-bd75-c07cf8b43bae","createdByUserId":"9f245acc-71f2-445b-bf34-502da5a0f9ed"}'

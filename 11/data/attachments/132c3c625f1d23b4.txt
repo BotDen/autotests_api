@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjUzLjk3MjM4MiIsInVzZXJfaWQiOiJjNjQzMjYxMS1kMmZkLTQyNDctYWNjNC00MGQyNjJlMzlhYzMifQ.Vp4ubOO71DjAvLK3r4iIcyvoECefPVVZEDRCWkneQeA'\
+-H 'content-length: 499'\
+-H 'content-type: application/json'\
+-d '{"title":"Угроза при опасность.","maxScore":70,"minScore":7,"description":"Тяжелый актриса другой мальчишка зеленый ложиться. Заработать плавно фонарик задрать серьезный видимо.\nХолодно необычный конференция ответить.","estimatedTime":"6 week","previewFileId":"85cf0f1b-e85d-46d4-a2d4-46ce538ad3d7","createdByUserId":"c6432611-d2fd-4247-acc4-40d262e39ac3"}'

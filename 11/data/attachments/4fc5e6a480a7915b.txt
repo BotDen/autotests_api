@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjU0LjY1MzMzMCIsInVzZXJfaWQiOiJhZDRjYmJlNy0wYWMyLTRmMDktOTE4Ni0zYmVlNzVlZGIyNzQifQ.HfSy6ETULFp0dPS1IBny7MovF2ek4FplLPacFFaec-8'\
+-H 'content-length: 537'\
+-H 'content-type: application/json'\
+-d '{"title":"Прелесть банк вытаскивать мотоцикл мимо функция кольцо.","maxScore":99,"minScore":32,"description":"Назначить около грустный спорт грудь. Командир беспомощный эпоха мгновение бабочка поезд слать издали. Природа бак при аллея шлем.","estimatedTime":"5 week","previewFileId":"b8fe46e4-1c73-4744-a79d-453db3ee1035","createdByUserId":"ad4cbbe7-0ac2-4f09-9186-3bee75edb274"}'

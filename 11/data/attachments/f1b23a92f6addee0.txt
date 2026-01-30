@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjUwLjU4MTQxOSIsInVzZXJfaWQiOiI3OTUwMjZlMi1iZjFhLTQxZTQtYmNkYy1lOTJlODA5YzgxMGQifQ.rNWeMMSC1pmdCR6mkvnAfQuNjndGCNKJmmEPtfvzVzg'\
+-H 'content-length: 622'\
+-H 'content-type: application/json'\
+-d '{"title":"Неправда второй изучить функция печатать изучить.","maxScore":95,"minScore":43,"description":"Монета дьявол сохранять совет. Написать трубка медицина одиннадцать секунда ведь. Выбирать товар уронить.\nКонференция вскинуть успокоиться одиннадцать выражаться покидать дальний.","estimatedTime":"2 week","previewFileId":"71b710db-b94c-4a7f-92e2-862849335b33","createdByUserId":"795026e2-bf1a-41e4-bcdc-e92e809c810d"}'

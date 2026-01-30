@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjUxLjI1Nzk1NCIsInVzZXJfaWQiOiJiY2Y0ZWYyOC04MTgxLTRiMTQtYWQ5Zi04MDI3MzMwMDNhZjQifQ.4rPMQkFN29cP3pJrO8TS0X1mVTOwGDnOEGP2aJ4nGlI'\
+-H 'content-length: 473'\
+-H 'content-type: application/json'\
+-d '{"title":"Разуметься поколение построить.","maxScore":63,"minScore":27,"description":"Провинция девка бегать граница полюбить. Поколение уничтожение правый блин. Поколение полюбить коллектив господь очко.","estimatedTime":"9 week","previewFileId":"a028e65f-aff8-49e7-8f83-d1c92e243900","createdByUserId":"bcf4ef28-8181-4b14-ad9f-802733003af4"}'

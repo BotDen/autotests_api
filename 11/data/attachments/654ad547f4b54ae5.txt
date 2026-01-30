@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjUyLjU5MTE0MCIsInVzZXJfaWQiOiI1OTIxNmZlOC0yOTllLTRiODEtODkxYy00YzU3NTU2MTY1MWYifQ.XZ4DkGvYSi8lKsPHb6HMPyPBdnuwmGyRq5wc2LhqPrg'\
+-H 'content-length: 512'\
+-H 'content-type: application/json'\
+-d '{"title":"Направо сынок металл вздрогнуть.","maxScore":69,"minScore":14,"description":"Сходить присесть устройство вытаскивать ставить наткнуться. Аж пространство уточнить передо головка. Дошлый возможно светило белье теория.","estimatedTime":"9 week","previewFileId":"dc6e5a85-2a7f-4e1d-9b99-feb3a65a1b30","createdByUserId":"59216fe8-299e-4b81-891c-4c575561651f"}'

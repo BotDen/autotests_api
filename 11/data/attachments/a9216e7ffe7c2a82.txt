@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjQ5Ljg5Mzc5OSIsInVzZXJfaWQiOiJlZDk0NzEyYS0xYjA1LTRjYzctOWY1Ny0yZmRmMjRlNTdhYmIifQ.F54HWOcmnwTvMZe1pBleye62NRb7lafyUOua5KaEkTg'\
+-H 'content-length: 546'\
+-H 'content-type: application/json'\
+-d '{"title":"Упорно головка социалистический.","maxScore":83,"minScore":43,"description":"Мальчишка сынок болото необычный ход. Важный выражение вздрогнуть сутки находить поздравлять расстройство. Теория господь пробовать лететь нажать возможно.","estimatedTime":"10 week","previewFileId":"83679142-0d9a-4614-86a6-c20626870cff","createdByUserId":"ed94712a-1b05-4cc7-9f57-2fdf24e57abb"}'

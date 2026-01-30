@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/courses/69c73e23-f91b-4733-8611-60ab67d85d9c'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjQ5Ljg5Mzc5OSIsInVzZXJfaWQiOiJlZDk0NzEyYS0xYjA1LTRjYzctOWY1Ny0yZmRmMjRlNTdhYmIifQ.F54HWOcmnwTvMZe1pBleye62NRb7lafyUOua5KaEkTg'\
+-H 'content-length: 553'\
+-H 'content-type: application/json'\
+-d '{"title":"Табак парень кожа бегать одиннадцать сверкать сопровождаться.","maxScore":85,"minScore":41,"description":"Армейский горький беспомощный командование.\nПровинция хозяйка появление сынок.\nУченый свежий что вздрогнуть. Радость второй передо падать палец. Увеличиваться армейский металл бочок дорогой.","estimatedTime":"2 week"}'

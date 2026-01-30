@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjUxLjkxOTI1OCIsInVzZXJfaWQiOiJjODMyZmRjOS1jNzFiLTQ1YTYtOTU4Yi0zN2I1ZDI5Y2MzMGYifQ.smFJs6Rk_GS1cI2_nu6y46sQzXzs7amDq16FoQByAWo'\
+-H 'content-length: 479'\
+-H 'content-type: application/json'\
+-d '{"title":"Падаль мотоцикл сутки банда.","courseId":"3c8b040d-ec41-4294-a5f4-3882a9fb66a9","maxScore":69,"minScore":36,"orderIndex":6,"description":"Второй упорно роскошный более.\nАдвокат отметить волк забирать пасть. Вывести монета миллиард поезд освободить деньги ночь лапа. Покидать тревога палка.","estimatedTime":"1 week"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAxLTMwVDE4OjEwOjUxLjkxOTI1OCIsInVzZXJfaWQiOiJjODMyZmRjOS1jNzFiLTQ1YTYtOTU4Yi0zN2I1ZDI5Y2MzMGYifQ.smFJs6Rk_GS1cI2_nu6y46sQzXzs7amDq16FoQByAWo'\
+-H 'content-length: 621'\
+-H 'content-type: application/json'\
+-d '{"title":"Угроза смеяться ребятишки добиться.","maxScore":82,"minScore":28,"description":"Салон вздрогнуть ломать труп трубка каюта. Ночь необычный ставить салон научить способ ныне через.\nСоветовать дальний коллектив. Песня разнообразный горький самостоятельно избегать смертельный.","estimatedTime":"7 week","previewFileId":"488154e7-0557-4432-9465-beb03864c5cf","createdByUserId":"c832fdc9-c71b-45a6-958b-37b5d29cc30f"}'

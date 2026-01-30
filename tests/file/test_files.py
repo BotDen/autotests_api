@@ -38,7 +38,7 @@ class TestsFiles:
     @allure.sub_suite(AllureStory.CREATE_ENTITY)
     @allure.severity(Severity.CRITICAL)
     def test_upload_file(self, files_client: FilesClient):
-        request = UploadFileRequestSchema(upload_file=settings.test_data.file_path)
+        request = UploadFileRequestSchema(upload_file=settings.test_data.image_path)
         response = files_client.upload_file_api(request)
         response_data = UploadFileResponseSchema.model_validate_json(response.text)
 
@@ -65,7 +65,7 @@ class TestsFiles:
     def test_upload_file_with_empty_filename(self, files_client: FilesClient):
         request = UploadFileRequestSchema(
             filename="",
-            upload_file=settings.test_data.file_path,
+            upload_file=settings.test_data.image_path,
         )
         response = files_client.upload_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)
@@ -84,7 +84,7 @@ class TestsFiles:
     def test_upload_file_with_empty_directory(self, files_client: FilesClient):
         request = UploadFileRequestSchema(
             directory="",
-            upload_file=settings.test_data.file_path,
+            upload_file=settings.test_data.image_path,
         )
         response = files_client.upload_file_api(request)
         response_data = ValidationErrorResponseSchema.model_validate_json(response.text)

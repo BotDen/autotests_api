@@ -9,7 +9,7 @@ class HTTPClientConfig(BaseModel):
     timeout: float
 
     @property
-    def client_url(self):
+    def client_url(self) -> str:
         return str(self.url)
 
 
@@ -35,7 +35,7 @@ class Settings(BaseSettings):
         allure_results_dir = DirectoryPath("./allure-results")  # Создаем объект пути к папке
         allure_results_dir.mkdir(exist_ok=True)  # Создаем папку allure-results, если она не существует
 
-        return Settings(allure_results_dir=allure_results_dir)
+        return Settings(allure_results_dir=allure_results_dir, http_client=cls.http_client, test_data=cls.test_data)
 
 
 settings = Settings.initialize()

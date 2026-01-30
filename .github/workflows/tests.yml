@@ -47,7 +47,7 @@ jobs:
       
       - name: Run API tests with pytest and generate allure results
         run: |
-          pytest -m regression --alluredir=allure-results  # Запускаем тесты и генерируем результаты для Allure
+          pytest -m regression --alluredir allure-results  # Запускаем тесты и генерируем результаты для Allure
       
       - name: Get allure history
         uses: actions/checkout@v6  # Опять клонируем репозиторий для получения истории отчётов

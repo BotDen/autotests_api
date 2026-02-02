@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/exercises/c4b76c3e-71a4-4b8a-b113-395add0e48df'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAyLjcwNjEzMyIsInVzZXJfaWQiOiJhOTY1ZjYzNi00OTVlLTQ1NTQtOGM3NC0xODIyZGRmZTE1MjMifQ.zTr2v-FiaFgxvL1D21Kc2mTq7cN1fPzkdSqpXSW2kGQ'\
+-H 'content-length: 424'\
+-H 'content-type: application/json'\
+-d '{"title":"Рот зато самостоятельно разнообразный табак волк.","maxScore":100,"minScore":42,"orderIndex":58,"description":"Еврейский пробовать экзамен труп. Деловой ломать появление салон результат отметить результат. Правление дальний способ очко.","estimatedTime":"7 week"}'

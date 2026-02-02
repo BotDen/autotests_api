@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAxLjM2NjU3MSIsInVzZXJfaWQiOiI1MjFhNjgzMS02Y2I4LTRmZTktYjg4OS0wNDZlOTVlYjA1YzMifQ.xq-Zak2YmVx2P51xJbkka8FdsNHrFlmk7G_8NU-NaMk'\
+-H 'content-length: 552'\
+-H 'content-type: application/json'\
+-d '{"title":"Мягкий господь дорогой конструкция спасть лететь.","courseId":"f7e69c30-3efe-4c82-b4b5-f42347ccb3a4","maxScore":57,"minScore":21,"orderIndex":40,"description":"Функция совещание провинция болото. Вскакивать еврейский господь космос. Рассуждение сравнение пастух наступать нож. Плод через устройство витрина мелькнуть поколение.","estimatedTime":"3 week"}'

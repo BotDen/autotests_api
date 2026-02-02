@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAwLjcwODc1MiIsInVzZXJfaWQiOiIyNDY2MDkzYi1lMTUwLTQ2YjgtODM5ZC1mZTViZWNiMmUyYTIifQ.pLt1AHS8OX40H4mQThCFfrTtp_Qykesb2eZAayJUUTs'\
+-H 'content-length: 548'\
+-H 'content-type: application/json'\
+-d '{"title":"Штаб число уронить пища демократия ботинок.","maxScore":91,"minScore":22,"description":"Четыре банк прощение факультет. Космос свежий исследование ведь дремать снимать даль.\nВообще число мягкий слишком. Белье даль падаль дальний отъезд.","estimatedTime":"3 week","previewFileId":"5c3393b9-bd66-4aa3-92ab-c3350690f6da","createdByUserId":"2466093b-e150-46b8-839d-fe5becb2e2a2"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAzLjQxNzUwMSIsInVzZXJfaWQiOiIzOGU5NTA3Ni1iMzNlLTRmYjUtOTg3MS02YmNmMzM1NDlkZGUifQ.7TolSkq2sDgSE51Hu-x2L5hjAfuJqUMPs9UOvztpjGQ'\
+-H 'content-length: 403'\
+-H 'content-type: application/json'\
+-d '{"title":"Способ сходить песенка дурацкий картинка.","maxScore":95,"minScore":40,"description":"Печатать способ господь житель. Легко слать растеряться снимать пастух.","estimatedTime":"6 week","previewFileId":"e6c2bf3b-f4da-44a6-9876-11ef784a3ca5","createdByUserId":"38e95076-b33e-4fb5-9871-6bcf33549dde"}'

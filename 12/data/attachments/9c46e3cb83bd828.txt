@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/courses/3707b507-0b0a-42aa-bead-80f8a7e6435f'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjEwOjU5LjM1MTk5NCIsInVzZXJfaWQiOiI2Y2JhNDc0OS0wMjhiLTQ0YzYtODE0Ny1hY2Y2YTY0MjM5MjAifQ.ZwP4MFwTrfQJIfI5ScJYCTfomOiiwm8InBcJwF9NNug'\
+-H 'content-length: 197'\
+-H 'content-type: application/json'\
+-d '{"title":"Холодно цель беспомощный.","maxScore":62,"minScore":18,"description":"Терапия монета рай аллея проход пища.","estimatedTime":"9 week"}'

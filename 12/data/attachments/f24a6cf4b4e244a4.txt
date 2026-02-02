@@ -1,0 +1,20 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:50 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Мягкий господь дорогой конструкция спасть лететь.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'course_id' equals expected f7e69c30-3efe-4c82-b4b5-f42347ccb3a4
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 57
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 21
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Функция совещание провинция болото. Вскакивать еврейский господь космос. Рассуждение сравнение пастух наступать нож. Плод через устройство витрина мелькнуть поколение.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 3 week
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'order_index' equals expected 40
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

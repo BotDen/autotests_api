@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAwLjAzODY0MyIsInVzZXJfaWQiOiJlNmM0OTgyYi0xOGY4LTQ5MmItOGM4ZC02MzI1NzRmNzQzZWQifQ.glCekdmPQl-iXCuQ2-d7nr-gAUs6MW5Ytfq5kKVIrEQ'\
+-H 'content-length: 656'\
+-H 'content-type: application/json'\
+-d '{"title":"Коричневый космос господь задрать четыре скользить.","maxScore":80,"minScore":17,"description":"Хлеб встать костер прелесть нажать реклама. Спичка парень народ инструкция. Подробность привлекать изображать тысяча покидать господь ложиться чем. Плавно другой висеть сутки пол песня возбуждение.","estimatedTime":"8 week","previewFileId":"4df0b675-bb81-4b76-b098-eda910f70ef6","createdByUserId":"e6c4982b-18f8-492b-8c8d-632574f743ed"}'

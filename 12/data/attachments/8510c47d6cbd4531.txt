@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAxLjM2NjU3MSIsInVzZXJfaWQiOiI1MjFhNjgzMS02Y2I4LTRmZTktYjg4OS0wNDZlOTVlYjA1YzMifQ.xq-Zak2YmVx2P51xJbkka8FdsNHrFlmk7G_8NU-NaMk'\
+-H 'content-length: 608'\
+-H 'content-type: application/json'\
+-d '{"title":"Непривычный механический какой сутки пропадать.","maxScore":85,"minScore":3,"description":"Сверкающий освобождение чем развернуться встать. Наткнуться выраженный упор невозможно жидкий появление. Свежий направо присесть советовать интеллектуальный единый неправда.","estimatedTime":"9 week","previewFileId":"80b3419a-b2c5-4174-9d1e-d80781dece5c","createdByUserId":"521a6831-6cb8-4fe9-b889-046e95eb05c3"}'

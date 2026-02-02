@@ -1,0 +1,32 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make GET request to http://localhost:8000/api/v1/courses?userId=e6c4982b-18f8-492b-8c8d-632574f743ed
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=e6c4982b-18f8-492b-8c8d-632574f743ed
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     COURSES_ASSERTIONS:courses.py:72 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that lens of 'courses' equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:49 Check course
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'id' equals expected 60e6e41b-1f10-4d84-ba23-5cba2e65a2b0
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Коричневый космос господь задрать четыре скользить.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 80
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 17
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Хлеб встать костер прелесть нажать реклама. Спичка парень народ инструкция. Подробность привлекать изображать тысяча покидать господь ложиться чем. Плавно другой висеть сутки пол песня возбуждение.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 8 week
+INFO     FILE_ASSERTIONS:file.py:45 Check file
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'id' equals expected 4df0b675-bb81-4b76-b098-eda910f70ef6
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'url' equals expected http://localhost:8000/static/test_data/dceee3c4-1ea8-4236-b49d-008a30fc024a
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'filename' equals expected dceee3c4-1ea8-4236-b49d-008a30fc024a
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'directory' equals expected test_data
+INFO     USER_ASSERTIONS:user.py:39 Check user
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'id' equals expected e6c4982b-18f8-492b-8c8d-632574f743ed
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'email' equals expected alekseevairina@example.org
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'first_name' equals expected Карп
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'last_name' equals expected Новиков
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'middle_name' equals expected Елизарович
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAyLjAzNzA5NSIsInVzZXJfaWQiOiJjZTgwNTljMi0xOTIwLTQ0ZmYtYTkxZi02OWU4ODlkOGQwOGUifQ.o9c2aaoRfTvkBi_gtNzTXItKs9ZyAtpztzAjFrCtAx8'\
+-H 'content-length: 525'\
+-H 'content-type: application/json'\
+-d '{"title":"Слать редактор вообще чувство народ ленинград.","maxScore":74,"minScore":33,"description":"Сверкающий деньги князь хозяйка. Дьявол совещание чем плавно инструкция понятный. Хозяйка спичка запеть редактор носок ремень сутки.","estimatedTime":"3 week","previewFileId":"e37bfee4-6433-44c2-a329-5d1228b752e6","createdByUserId":"ce8059c2-1920-44ff-a91f-69e889d8d08e"}'

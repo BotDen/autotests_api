@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjExOjAyLjcwNjEzMyIsInVzZXJfaWQiOiJhOTY1ZjYzNi00OTVlLTQ1NTQtOGM3NC0xODIyZGRmZTE1MjMifQ.zTr2v-FiaFgxvL1D21Kc2mTq7cN1fPzkdSqpXSW2kGQ'\
+-H 'content-length: 650'\
+-H 'content-type: application/json'\
+-d '{"title":"Сохранять через белье спасть проход труп новый.","maxScore":100,"minScore":12,"description":"Упор зарплата появление заработать. Провинция отметить дружно невыносимый бак висеть редактор.\nПредоставить покинуть девка пламя заложить. Увеличиваться да результат голубчик пятеро левый настать.","estimatedTime":"10 week","previewFileId":"93bf586d-ee43-477c-af37-d96bd21db08f","createdByUserId":"a965f636-495e-4554-8c74-1822ddfe1523"}'

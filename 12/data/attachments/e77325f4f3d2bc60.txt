@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjEwOjU5LjM1MTk5NCIsInVzZXJfaWQiOiI2Y2JhNDc0OS0wMjhiLTQ0YzYtODE0Ny1hY2Y2YTY0MjM5MjAifQ.ZwP4MFwTrfQJIfI5ScJYCTfomOiiwm8InBcJwF9NNug'\
+-H 'content-length: 487'\
+-H 'content-type: application/json'\
+-d '{"title":"Намерение художественный волк угодный грудь пятеро.","maxScore":82,"minScore":15,"description":"Висеть мера сынок домашний прошептать написать выраженный. Отдел расстегнуть конструкция голубчик солнце.","estimatedTime":"3 week","previewFileId":"3e4d0455-ec02-44d6-881e-ead5fab84d41","createdByUserId":"6cba4749-028b-44c6-8147-acf6a6423920"}'

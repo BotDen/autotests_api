@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU4LjQxMzcxOCIsInVzZXJfaWQiOiI5Y2EzYjQ4Ni01NjJlLTRkMGItODNjMC0wMGZkYTdlNmIxYzkifQ.uYuuuibFpYu4TSzqFZvChNEzeHeRKC0EOSsBogXOMKE'\
+-H 'content-length: 422'\
+-H 'content-type: application/json'\
+-d '{"title":"Интернет скрытый адвокат отъезд изображать вздрагивать.","maxScore":55,"minScore":41,"description":"Выбирать привлекать карандаш. Школьный запретить боец неожиданный.","estimatedTime":"6 week","previewFileId":"3af1c047-4d32-4f93-88d8-143b1942f3f8","createdByUserId":"9ca3b486-562e-4d0b-83c0-00fda7e6b1c9"}'

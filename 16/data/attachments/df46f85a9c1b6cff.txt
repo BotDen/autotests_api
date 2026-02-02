@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU3LjEyMzUzNCIsInVzZXJfaWQiOiJjNTE4NGVlNi00MDc1LTQwNGYtOGZhOC03MzI2MWM0YmU5NmUifQ.WZJw_cIY73gaKkmG37tPyYawKNI2cwvtxOFMu4bObIs'\
+-H 'content-length: 495'\
+-H 'content-type: application/json'\
+-d '{"title":"Изображать деньги миллиард шлем.","maxScore":50,"minScore":23,"description":"Место заработать правление коллектив исследование идея порог. Наступать услать советовать следовательно успокоиться цвет жидкий.","estimatedTime":"8 week","previewFileId":"dc49cba0-05b2-4b9c-a5c8-e0f64883ade6","createdByUserId":"c5184ee6-4075-404f-8fa8-73261c4be96e"}'

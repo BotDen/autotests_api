@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/courses/cb56dde9-e962-48c2-9913-a7c9b05b58a6'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU3LjEyMzUzNCIsInVzZXJfaWQiOiJjNTE4NGVlNi00MDc1LTQwNGYtOGZhOC03MzI2MWM0YmU5NmUifQ.WZJw_cIY73gaKkmG37tPyYawKNI2cwvtxOFMu4bObIs'\
+-H 'content-length: 352'\
+-H 'content-type: application/json'\
+-d '{"title":"Хотеть карман волк волк поймать вывести место.","maxScore":71,"minScore":15,"description":"Спорт грудь спешить жидкий а. Порода возможно присесть тюрьма. Ремень зато сутки изба граница правый.","estimatedTime":"1 week"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUxOjAxLjAyNTUzOCIsInVzZXJfaWQiOiI3NTA3NDM5Ny03ZmNiLTRjNTAtOTU5Yi04MGVlMDhiYWM1NzUifQ.LFJb1vnARV0s6tdG29ajXqNA5_B4HiijaUrtU5qtoEQ'\
+-H 'content-length: 568'\
+-H 'content-type: application/json'\
+-d '{"title":"Тусклый совещание написать мальчишка освободить вообще.","maxScore":61,"minScore":42,"description":"Дрогнуть освободить коробка. Наткнуться что миг заведение парень мера ленинград.\nСмелый правый пасть. Чувство куча необычный изредка конструкция.","estimatedTime":"2 week","previewFileId":"9c3c7a5b-939f-4328-b87b-433e47c83318","createdByUserId":"75074397-7fcb-4c50-959b-80ee08bac575"}'

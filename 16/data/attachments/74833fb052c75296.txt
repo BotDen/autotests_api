@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU3Ljc3MzU4NyIsInVzZXJfaWQiOiI1MzZlMWEwZS04OThjLTQ3NWQtOGIwYi1hYWI3MDdjMmJhZGEifQ.8Y-WSrznqxTAyQdmiscWjM_rjobfCmRb2lUfbsTxomU'\
+-H 'content-length: 497'\
+-H 'content-type: application/json'\
+-d '{"title":"Приятель витрина чувство фонарик.","maxScore":84,"minScore":45,"description":"Тюрьма идея применяться один сынок заложить. Нажать дьявол крыса рабочий понятный полностью радость. Покидать лететь князь мрачно.","estimatedTime":"3 week","previewFileId":"0833eeef-d7aa-4168-a9f8-cd66e08a5bde","createdByUserId":"536e1a0e-898c-475d-8b0b-aab707c2bada"}'

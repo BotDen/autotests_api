@@ -1,0 +1,22 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Make PATCH request to http://localhost:8000/api/v1/exercises/a8c82efe-25d4-46a3-9fea-eeaa2e723259
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises/a8c82efe-25d4-46a3-9fea-eeaa2e723259
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:104 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Термин беспомощный недостаток человечек трубка.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 65
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 3
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'order_index' equals expected 32
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Плод ответить пространство выдержать точно банк изучить. Иной ягода сверкать назначить.
+Скользить потом бак школьный понятный. Реклама одиннадцать пропаганда отъезд постоянный.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 4 week
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

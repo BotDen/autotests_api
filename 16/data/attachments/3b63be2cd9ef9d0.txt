@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUxOjAwLjM0NjY5NyIsInVzZXJfaWQiOiIwN2I4NzA2Yy01MjJmLTRiZGQtYjczOC1kZmQxNmM4MjgzYzYifQ.RM6-hpNkZ-_BW1rXNmqooJ-ccx7Xw7S0TDLkqgC7OBw'\
+-H 'content-length: 440'\
+-H 'content-type: application/json'\
+-d '{"title":"Бабочка реклама дурацкий свежий болото багровый тусклый порядок.","maxScore":94,"minScore":41,"description":"Приятель тюрьма порядок. Миг термин степь демократия способ спешить.","estimatedTime":"5 week","previewFileId":"05d8a90b-723b-40d3-a274-90b68d637806","createdByUserId":"07b8706c-522f-4bdd-b738-dfd16c8283c6"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU5LjY5OTA3OSIsInVzZXJfaWQiOiJlOWRhYTYyNS0wYTY5LTQyZjgtOThiZS0zMTU0OGY3NzMwNjMifQ.8KC_ZChyTcJHyAec_twVnIFUKgNl570ROQZJxFg09Yg'\
+-H 'content-length: 580'\
+-H 'content-type: application/json'\
+-d '{"title":"Миг научить блин интеллектуальный хлеб кузнец.","maxScore":61,"minScore":11,"description":"Реклама эпоха славный задержать иной очко. Налоговый намерение материя очутиться нервно мусор. Процесс приятель деловой счастье висеть спорт правление армейский.","estimatedTime":"1 week","previewFileId":"ee238923-4ccc-45ad-be82-157e187ed244","createdByUserId":"e9daa625-0a69-42f8-98be-31548f773063"}'

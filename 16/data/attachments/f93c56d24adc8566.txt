@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTAyVDEwOjUwOjU5LjA1NDIzNyIsInVzZXJfaWQiOiJmZDQxZjU1YS1kMWY0LTQwZDQtOTIwNS01ZmM4MTM0ZmZiYjIifQ.fES33Gy8mLI9ztS1FLMxBmV0sL580W5iOV4Q8zds72w'\
+-H 'content-length: 589'\
+-H 'content-type: application/json'\
+-d '{"title":"Госпожа покинуть тесно печатать пропаганда.","courseId":"203bd03c-f9ec-421b-81e8-fc934062c8aa","maxScore":75,"minScore":14,"orderIndex":91,"description":"Отметить сутки появление мелькнуть место волк. Казнь печатать бабочка ведь порода. Промолчать юный возбуждение непривычный фонарик инвалид.\nСтакан хлеб триста руководитель смеяться порт порода.","estimatedTime":"4 week"}'

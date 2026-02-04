@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDEwOjQyOjEzLjk4MjMxOSIsInVzZXJfaWQiOiJlYTZmZjY3Yy1hZDlkLTQzMjctODA4ZS0xOGFjNGMxNWVjYTcifQ.MDHeEZQy04AIuWLulF7Bcx6ksV3p4OZnPZwJRUNxSAo'\
+-H 'content-length: 631'\
+-H 'content-type: application/json'\
+-d '{"title":"Покидать бок ломать тревога заведение кузнец место.","maxScore":89,"minScore":32,"description":"Банк выразить дружно. Слать привлекать командование. Полоска домашний налево заплакать научить.\nМгновение мрачно голубчик. Коллектив сравнение сохранять возмутиться порода за порядок.","estimatedTime":"9 week","previewFileId":"b535ed97-3e0b-4696-9cc8-bc9039bcab1c","createdByUserId":"ea6ff67c-ad9d-4327-808e-18ac4c15eca7"}'

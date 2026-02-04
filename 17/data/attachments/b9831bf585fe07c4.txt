@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/exercises/12fabb2c-ed56-43ac-890a-687a3213c2a4'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDEwOjQyOjE0LjY1MjMyNSIsInVzZXJfaWQiOiJjYjZmNDNjZS1kNDA3LTRlZjctYmVjMC0zMjZiMTM2M2ZiZjEifQ.74Sh95W2PFgCStsj-OO6toE-bkne48aftGbbFQ1CpUc'\
+-H 'content-length: 572'\
+-H 'content-type: application/json'\
+-d '{"title":"Свежий самостоятельно печатать степь смертельный плясать торопливый.","maxScore":95,"minScore":24,"orderIndex":31,"description":"Передо полевой налево сверкающий сынок уронить прежде настать. Покидать заплакать да штаб. Космос дрогнуть термин степь чувство проход порода выражаться. Счастье выраженный лететь зачем.","estimatedTime":"7 week"}'

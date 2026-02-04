@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDEwOjQyOjEyLjY0MTk3MCIsInVzZXJfaWQiOiI4ODQ5NWU4MC1hN2IwLTQzYWMtYjBhYS1mNzY4MTAyYzU5ZTgifQ.d2ha6wP_2xmLzI3i5mNIdFDjQqigUesDEtFGcONIlvY'\
+-H 'content-length: 552'\
+-H 'content-type: application/json'\
+-d '{"title":"Шлем отдел тысяча единый увеличиваться.","maxScore":72,"minScore":27,"description":"Цель дальний неудобно коллектив функция исследование. Спешить анализ кольцо печатать низкий. Угодный потом слать пол достоинство манера избегать процесс.","estimatedTime":"2 week","previewFileId":"5d94ee48-c8f8-4de4-8740-e0b461d9c853","createdByUserId":"88495e80-a7b0-43ac-b0aa-f768102c59e8"}'

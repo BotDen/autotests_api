@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDEwOjQyOjE2LjA0NDEwNCIsInVzZXJfaWQiOiJmMGE0OTIwMC0yOTE4LTQzMzctOTA4NC1mZTkwN2Q5NDc5NTAifQ.Iw-MDFlUmTVPYJZCztnF6KgJtQ52XUKUGj8SFBjYAYE'\
+-H 'content-length: 592'\
+-H 'content-type: application/json'\
+-d '{"title":"Дыхание изучить бок коллектив бетонный мера.","maxScore":72,"minScore":48,"description":"Тута посвятить что мгновение передо достоинство армейский. Исполнять парень функция инструкция костер.\nШкольный еврейский волк намерение порядок. Миллиард низкий дошлый.","estimatedTime":"4 week","previewFileId":"0656f122-f41d-4425-8a78-b339fa346204","createdByUserId":"f0a49200-2918-4337-9084-fe907d947950"}'

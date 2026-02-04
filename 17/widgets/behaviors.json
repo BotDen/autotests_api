@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"bc09dcf6d6a67829b689b8b52ab21a07","name":"LMS service","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}},{"uid":"ebdf011f33f07cef525493ad5f60ddd1","name":"Administration service","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

@@ -1,0 +1,23 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Make GET request to http://localhost:8000/api/v1/exercises/3188606a-e90f-4c4a-9e92-ccf47b95605c
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises/3188606a-e90f-4c4a-9e92-ccf47b95605c
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:89 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check exercise
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Миф мелькнуть радость бригада банк.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'course_id' equals expected 74427e20-0e56-4dfa-92bd-b75c96a52585
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 94
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 12
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'order_index' equals expected 25
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Чем очередной серьезный. Бровь аж демократия запеть намерение карандаш. Ленинград адвокат неожиданный.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 1 week
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

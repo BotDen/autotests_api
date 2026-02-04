@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDEwOjQyOjExLjI4NzkyMCIsInVzZXJfaWQiOiIyYjI4ZmU3ZS00NDA0LTQzMjMtYjI2Mi1jODYzNzQzNWJhMWEifQ.A2RiVhI3ylnAqo2ms1KkE2L2-afLUgK2NXjNTfZF-ZE'\
+-H 'content-length: 616'\
+-H 'content-type: application/json'\
+-d '{"title":"Освободить лиловый расстройство боец.","maxScore":58,"minScore":41,"description":"Изменение коробка набор избегать тревога функция. Дошлый спалить шлем страсть князь.\nНекоторый тута дрогнуть багровый выдержать задержать мгновение. Возникновение выражаться поймать сынок.","estimatedTime":"4 week","previewFileId":"5480e948-e6b1-4575-94a3-25db4565e493","createdByUserId":"2b28fe7e-4404-4323-b262-c8637435ba1a"}'

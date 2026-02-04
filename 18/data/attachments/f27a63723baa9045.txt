@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     COURSES_ASSERTIONS:courses.py:88 Check create course response
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Отъезд салон свежий передо.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 91
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 39
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Наслаждение выраженный зеленый добиться строительство. Хотеть светило плясать. Лететь построить дурацкий деньги промолчать. Куча растеряться прошептать карандаш вскинуть ныне изменение растеряться.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 4 week
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'preview_file_id' equals expected d91b536b-fb20-4168-b8ae-8f5eed86372d
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'created_by_user' equals expected 4aecc12d-81b6-4798-b47e-26e6dcd2957f
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

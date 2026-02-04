@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI1Ljc5ODc5NyIsInVzZXJfaWQiOiJkZjgwMjhmMy00ODc0LTQzNTItODU3Ni0xYTM3NzE3ZjA0YjEifQ.Pjg9CA1SuINJZA6pWnK_9ZQRy2nMCDl1e0QdtOetyxg'\
+-H 'content-length: 604'\
+-H 'content-type: application/json'\
+-d '{"title":"Нервно избегать беспомощный деньги бак крутой доставать.","maxScore":77,"minScore":5,"description":"Выраженный зачем полевой поговорить выгнать. Наслаждение услать факультет угодный затянуться рабочий растеряться. Вытаскивать ученый сверкающий редактор смеяться.","estimatedTime":"10 week","previewFileId":"ac02130e-d669-49af-977a-5cd658fe3ccc","createdByUserId":"df8028f3-4874-4352-8576-1a37717f04b1"}'

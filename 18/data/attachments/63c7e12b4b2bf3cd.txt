@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI1Ljc5ODc5NyIsInVzZXJfaWQiOiJkZjgwMjhmMy00ODc0LTQzNTItODU3Ni0xYTM3NzE3ZjA0YjEifQ.Pjg9CA1SuINJZA6pWnK_9ZQRy2nMCDl1e0QdtOetyxg'\
+-H 'content-length: 579'\
+-H 'content-type: application/json'\
+-d '{"title":"Покидать песня возмутиться ботинок услать дьявол мотоцикл сохранять.","courseId":"0b60ecae-8678-4215-b890-0335d00efa58","maxScore":71,"minScore":19,"orderIndex":24,"description":"Космос фонарик реклама правый премьера издали. Единый тысяча торговля лететь.\nКоманда мимо палка рис бровь рота. Пятеро поколение пятеро функция голубчик рот через.","estimatedTime":"7 week"}'

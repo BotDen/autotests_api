@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI3LjEzNjA2NCIsInVzZXJfaWQiOiIwZTJiMDEyNi1hM2I3LTQwZDEtYTc2MC1hYmE0MTM4ZWEyOWMifQ.jF0Nw3jS-u_-xL62zhevejfxAKmQFHBzyXse2jkun7I'\
+-H 'content-length: 557'\
+-H 'content-type: application/json'\
+-d '{"title":"Призыв монета необычный.","maxScore":72,"minScore":31,"description":"Легко изредка упор возникновение. Инфекция передо крыса исследование новый изба бабочка равнодушный.\nНаучить решение мрачно бровь висеть печатать. Куча покидать пища вряд.","estimatedTime":"4 week","previewFileId":"641a023b-ccff-4793-a7d8-605393a9d3ef","createdByUserId":"0e2b0126-a3b7-40d1-a760-aba4138ea29c"}'

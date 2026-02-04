@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI4LjUxMTQyNSIsInVzZXJfaWQiOiIwZmIxY2Y3MC1iZmJkLTQ4YmEtYTU3My04MGE4ODNlYWNkNWYifQ.ibqxLLeLnjNI0492mmheK7XwMBIRorXvntzFkMOS9f4'\
+-H 'content-length: 492'\
+-H 'content-type: application/json'\
+-d '{"title":"Горький научить мальчишка шлем.","maxScore":66,"minScore":1,"description":"Кузнец бригада наткнуться затянуться пятеро смеяться коммунизм. Трубка советовать необычный изучить выдержать реклама построить.","estimatedTime":"9 week","previewFileId":"14955259-e246-4411-91b7-3da12972cbc2","createdByUserId":"0fb1cf70-bfbd-48ba-a573-80a883eacd5f"}'

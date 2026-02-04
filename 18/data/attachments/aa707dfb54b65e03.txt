@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI3LjgwOTY0NyIsInVzZXJfaWQiOiJkNzQ3ODg1Mi04OTM4LTQwYjAtYjY4Ny02ZTliZGYyOTg1YTYifQ.KT23Oai33iWo5MI3Y-nS58RsGx4aut7Dqe9uy562-to'\
+-H 'content-length: 474'\
+-H 'content-type: application/json'\
+-d '{"title":"Скользить правый плясать освободить сынок.","maxScore":67,"minScore":39,"description":"Разводить нажать миллиард лапа. Бабочка решение выразить миллиард помимо. Хозяйка добиться сбросить светило.","estimatedTime":"6 week","previewFileId":"65c19476-516b-4e32-af42-ffb332d5059c","createdByUserId":"d7478852-8938-40b0-b687-6e9bdf2985a6"}'

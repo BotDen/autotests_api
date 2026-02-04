@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI2LjQ2OTc2OCIsInVzZXJfaWQiOiI5OWM0MTExMS04Njg5LTQwMTMtODJkOC1hMmI3ZmIxNDA4MWEifQ.syVDLZfh_lZdjcBO6x40aDIos3NlaVve1PqQKERdqFk'\
+-H 'content-length: 490'\
+-H 'content-type: application/json'\
+-d '{"title":"Опасность военный горький школьный.","maxScore":92,"minScore":7,"description":"Более изображать порог. Четыре тревога видимо неожиданно граница угроза исследование. Выраженный умолять кожа иной сверкать.","estimatedTime":"1 week","previewFileId":"821ebdcf-4e8f-4c27-a4f3-b0a7f5718537","createdByUserId":"99c41111-8689-4013-82d8-a2b7fb14081a"}'

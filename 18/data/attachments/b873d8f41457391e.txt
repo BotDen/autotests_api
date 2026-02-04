@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/courses/ac35cc1b-f3d5-4aa0-8d1b-d72d1a1c8604'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjIzLjc5NTgyMyIsInVzZXJfaWQiOiIxOTQxYTNkNy0yYTA5LTRhYzctOGNlNC03ZGM5MmNhMWExYjIifQ.qG98IKhzXPvli81St17TnUQqBt2Z7ICVjU6D2LDqSCM'\
+-H 'content-length: 424'\
+-H 'content-type: application/json'\
+-d '{"title":"Поставить триста совещание.","maxScore":87,"minScore":2,"description":"Чувство ход зеленый витрина школьный затянуться скрытый провинция. Заложить пол растеряться за умирать более.\nОпасность пол манера при интернет ночь дремать.","estimatedTime":"4 week"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjIzLjc5NTgyMyIsInVzZXJfaWQiOiIxOTQxYTNkNy0yYTA5LTRhYzctOGNlNC03ZGM5MmNhMWExYjIifQ.qG98IKhzXPvli81St17TnUQqBt2Z7ICVjU6D2LDqSCM'\
+-H 'content-length: 441'\
+-H 'content-type: application/json'\
+-d '{"title":"Засунуть изредка банда.","maxScore":61,"minScore":34,"description":"Достоинство разуметься упор одиннадцать спорт манера мимо. Заработать выражение бетонный покидать миф свежий.","estimatedTime":"2 week","previewFileId":"6a6ce226-4c74-405a-b066-ec70e147ce50","createdByUserId":"1941a3d7-2a09-4ac7-8ce4-7dc92ca1a1b2"}'

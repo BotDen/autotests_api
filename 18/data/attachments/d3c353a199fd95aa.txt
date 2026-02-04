@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI0LjQ3NTY1NSIsInVzZXJfaWQiOiI0MmJkOWNmMC1kMjllLTQwZDctYjg4OS00NTJhNmQ0ODdkNDIifQ.qpHay7EO1ERn11HAcENMb-EB8t-bXms127whkEKSecY'\
+-H 'content-length: 517'\
+-H 'content-type: application/json'\
+-d '{"title":"Похороны заложить более возникновение.","maxScore":67,"minScore":7,"description":"Магазин желание очередной конференция июнь.\nПотом инструкция забирать полоска волк кольцо кпсс металл. Помимо даль отъезд исследование.","estimatedTime":"2 week","previewFileId":"a2645750-353c-48c1-9d8c-d60fab62335d","createdByUserId":"42bd9cf0-d29e-40d7-b889-452a6d487d42"}'

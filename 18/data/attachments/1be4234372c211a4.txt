@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjM5OjI1LjE0MzA4OSIsInVzZXJfaWQiOiI0YWVjYzEyZC04MWI2LTQ3OTgtYjQ3ZS0yNmU2ZGNkMjk1N2YifQ.SX3hnLQ5cXtYnLe1r6fUg1QuWVKsfSOHpSTPjI8LDIo'\
+-H 'content-length: 614'\
+-H 'content-type: application/json'\
+-d '{"title":"Отъезд салон свежий передо.","maxScore":91,"minScore":39,"description":"Наслаждение выраженный зеленый добиться строительство. Хотеть светило плясать. Лететь построить дурацкий деньги промолчать. Куча растеряться прошептать карандаш вскинуть ныне изменение растеряться.","estimatedTime":"4 week","previewFileId":"d91b536b-fb20-4168-b8ae-8f5eed86372d","createdByUserId":"4aecc12d-81b6-4798-b47e-26e6dcd2957f"}'

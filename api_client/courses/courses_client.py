@@ -10,6 +10,7 @@ from api_client.courses.course_schema import (
 )
 from api_client.private_http_builder import AuthenticationUserSchema, get_private_http_client
 from tools.routes import APIRoutes
+from api_client.api_coverage import tracker
 
 
 class CoursesClient(APIClient):
@@ -18,6 +19,7 @@ class CoursesClient(APIClient):
     """
 
     @allure.step("Get courses")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def get_courses_user_api(self, query: GetCoursesQueryRequestSchema) -> Response:
         """
         Метод получения списка курсов.
@@ -27,6 +29,7 @@ class CoursesClient(APIClient):
         return self.get(url=f"{APIRoutes.COURSES}", params=query.model_dump(by_alias=True))
 
     @allure.step("Get course by course_id {course_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def get_course_api(self, course_id: str) -> Response:
         """
         Метод получения курса.
@@ -36,6 +39,7 @@ class CoursesClient(APIClient):
         return self.get(url=f"{APIRoutes.COURSES}/{course_id}")
 
     @allure.step("Get new course")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def create_course_api(self, request: CreateCourseRequestSchema) -> Response:
         """
         Метод создания курса
@@ -46,6 +50,7 @@ class CoursesClient(APIClient):
         return self.post(url=f"{APIRoutes.COURSES}", json=request.model_dump(by_alias=True))
 
     @allure.step("Update course by course_id {course_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def update_course_api(self, course_id: str, request: UpdateCourseRequestSchema) -> Response:
         """
         Метод обновления курса.
@@ -56,6 +61,7 @@ class CoursesClient(APIClient):
         return self.patch(url=f"{APIRoutes.COURSES}/{course_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete course by course_id {course_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def delete_course_api(self, course_id: str) -> Response:
         """
         Метод удаления курса.

@@ -8,3 +8,9 @@ __pycache__
 # allure
 allure-results
 allure-report
+
+# coverage
+coverage.html
+coverage-history.json
+coverage-report.json
+coverage-results/

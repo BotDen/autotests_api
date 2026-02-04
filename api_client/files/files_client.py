@@ -1,6 +1,7 @@
 import allure
 from httpx import Response
 from api_client.api_client import APIClient
+from api_client.api_coverage import tracker
 from api_client.files.file_schema import UploadFileRequestSchema, UploadFileResponseSchema
 from api_client.private_http_builder import AuthenticationUserSchema, get_private_http_client
 from tools.routes import APIRoutes
@@ -8,6 +9,7 @@ from tools.routes import APIRoutes
 
 class FilesClient(APIClient):
     @allure.step("Get file by file_id {file_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.FILES}/{{file_id}}")
     def get_file_api(self, file_id: str) -> Response:
         """
         Метод получения файла.
@@ -17,6 +19,7 @@ class FilesClient(APIClient):
         return self.get(url=f"{APIRoutes.FILES}/{file_id}")
 
     @allure.step("Delete file by file_id {file_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.FILES}/{{file_id}}")
     def delete_file_api(self, file_id: str) -> Response:
         """
         Метод удаления файла.
@@ -26,6 +29,7 @@ class FilesClient(APIClient):
         return self.delete(url=f"{APIRoutes.FILES}/{file_id}")
 
     @allure.step("Upload file")
+    @tracker.track_coverage_httpx(f"{APIRoutes.FILES}")
     def upload_file_api(self, request: UploadFileRequestSchema) -> Response:
         """
         Метод создания файла.

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjIwLjM2Mjg3NSIsInVzZXJfaWQiOiIwYzllM2U1OC0yNjk1LTQzNGItOWJkZC0zYWY1Nzk1NjkyZDgifQ.IqEstui6s9md3Dqs5Rdeam9egxsY1oMkEYXaYvpZdwg'\
+-H 'content-length: 588'\
+-H 'content-type: application/json'\
+-d '{"title":"Задержать мрачно прежде услать прежний художественный потом пересечь.","maxScore":91,"minScore":35,"description":"Серьезный вздрагивать умирать выгнать. Слишком зеленый тяжелый спешить. Дурацкий порода дремать упорно бок. Мрачно механический сынок деловой.","estimatedTime":"2 week","previewFileId":"04ee73d2-0ab8-4fcd-955d-6a891bb580ed","createdByUserId":"0c9e3e58-2695-434b-9bdd-3af5795692d8"}'

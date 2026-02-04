@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjE5LjY1ODYwNiIsInVzZXJfaWQiOiJlYjFiZmFhOC03MGM1LTQ4MDQtOTIxNS0wODk3NDUxYzRkNmIifQ.-h5huTIWmOlNdK8bB7V-qVYIQqOmkNaW-JKtYr957jE'\
+-H 'content-length: 506'\
+-H 'content-type: application/json'\
+-d '{"title":"Рай триста командир полоска.","courseId":"319c4f32-d3b1-455a-8353-bbc4382f3028","maxScore":77,"minScore":19,"orderIndex":7,"description":"Основание июнь поймать мгновение постоянный. Развернуться привлекать серьезный карман конференция. Зато изучить невозможно художественный сходить материя развитый.","estimatedTime":"8 week"}'

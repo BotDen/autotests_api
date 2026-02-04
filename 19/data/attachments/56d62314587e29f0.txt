@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjE5LjY1ODYwNiIsInVzZXJfaWQiOiJlYjFiZmFhOC03MGM1LTQ4MDQtOTIxNS0wODk3NDUxYzRkNmIifQ.-h5huTIWmOlNdK8bB7V-qVYIQqOmkNaW-JKtYr957jE'\
+-H 'content-length: 479'\
+-H 'content-type: application/json'\
+-d '{"title":"Монета витрина правый палка.","maxScore":64,"minScore":40,"description":"Приятель запустить народ засунуть уточнить назначить костер. Поставить выдержать четко четко заплакать правильный полностью.","estimatedTime":"5 week","previewFileId":"43f36923-5aa9-4163-b65f-1e24d5ba9900","createdByUserId":"eb1bfaa8-70c5-4804-9215-0897451c4d6b"}'

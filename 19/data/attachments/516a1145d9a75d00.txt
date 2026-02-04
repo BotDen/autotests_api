@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjE4LjMxOTk4MSIsInVzZXJfaWQiOiIyMjdiMzA1Mi05YTI0LTQxYjMtYmQ0NC04YzQ0Y2E1OTIyOWUifQ.l-y4Os7ebuO5YxMH_owt-fhIBR-T-DDOpKXokDjHdL0'\
+-H 'content-length: 591'\
+-H 'content-type: application/json'\
+-d '{"title":"Шлем табак команда теория умолять неожиданный интернет.","maxScore":90,"minScore":6,"description":"Неожиданно деловой рабочий естественный пища. Пространство витрина поговорить карман.\nСопровождаться выкинуть советовать. Радость кпсс мусор головной металл.","estimatedTime":"5 week","previewFileId":"86d189e1-fda1-4fe2-92a3-24b1b018a313","createdByUserId":"227b3052-9a24-41b3-bd44-8c44ca59229e"}'

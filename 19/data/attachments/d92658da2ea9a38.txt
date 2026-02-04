@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/courses/afe26214-13c5-4fc8-b49a-a4388d3513f4'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjE1LjY1MDc3MCIsInVzZXJfaWQiOiI4ZWY0YTEzZi1iNmUzLTQ4ODctYmFjZC0xMzU4ODMxNjNiYTEifQ.DB8cX4tkKt_JMDWWCSESxMl1GMcskeyVBNLu2-QM8HY'\
+-H 'content-length: 450'\
+-H 'content-type: application/json'\
+-d '{"title":"Демократия реклама кожа бетонный конференция.","maxScore":71,"minScore":28,"description":"Основание головка написать неудобно естественный поймать. Носок медицина выразить функция новый мусор скользить. Выражаться приличный угодный грустный.","estimatedTime":"9 week"}'

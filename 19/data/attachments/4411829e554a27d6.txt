@@ -1,0 +1,33 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make GET request to http://localhost:8000/api/v1/courses?userId=39b02beb-295d-4d18-b8b8-57d906d4abe1
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses?userId=39b02beb-295d-4d18-b8b8-57d906d4abe1
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     COURSES_ASSERTIONS:courses.py:72 Check get courses response
+INFO     BASE_ASSERTIONS:base.py:69 Check that lens of 'courses' equals to 1
+INFO     COURSES_ASSERTIONS:courses.py:49 Check course
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'id' equals expected 9def1d41-35ab-44a9-8954-d394124ffe98
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Задрать место пространство.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 56
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 34
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Тута степь степь. Виднеться тусклый тревога кпсс волк спорт а. Добиться около плод через штаб палата.
+Реклама ярко тюрьма полюбить научить через близко аллея. Видимо отметить успокоиться витрина.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 9 week
+INFO     FILE_ASSERTIONS:file.py:45 Check file
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'id' equals expected 3793e9f1-f375-4cc1-b3ec-993d683625d4
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'url' equals expected http://localhost:8000/static/test_data/7a35ab17-fc1e-4177-adba-099fd716e48b
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'filename' equals expected 7a35ab17-fc1e-4177-adba-099fd716e48b
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'directory' equals expected test_data
+INFO     USER_ASSERTIONS:user.py:39 Check user
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'id' equals expected 39b02beb-295d-4d18-b8b8-57d906d4abe1
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'email' equals expected sbragin@example.net
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'first_name' equals expected Афиноген
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'last_name' equals expected Зиновьева
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'middle_name' equals expected Ильясович
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

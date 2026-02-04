@@ -1,0 +1,17 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 422 Unprocessable Entity from http://localhost:8000/api/v1/files
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 422
+INFO     FILE_ASSERTIONS:file.py:86 Check upload file with empty filename response
+INFO     ERRORS_ASSERTIONS:errors.py:41 Check validation error response
+INFO     BASE_ASSERTIONS:base.py:69 Check that lens of 'details' equals to 1
+INFO     ERRORS_ASSERTIONS:errors.py:20 Check validation errors
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'type' equals expected string_too_short
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'input' equals expected 
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'context' equals expected {'min_length': 1}
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'message' equals expected String should have at least 1 character
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'location' equals expected ['body', 'filename']
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

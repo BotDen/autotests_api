@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjE1LjY1MDc3MCIsInVzZXJfaWQiOiI4ZWY0YTEzZi1iNmUzLTQ4ODctYmFjZC0xMzU4ODMxNjNiYTEifQ.DB8cX4tkKt_JMDWWCSESxMl1GMcskeyVBNLu2-QM8HY'\
+-H 'content-length: 592'\
+-H 'content-type: application/json'\
+-d '{"title":"Видимо пища потрясти оставить скользить цель.","maxScore":54,"minScore":23,"description":"Бок торопливый возможно жидкий. Обида пол правление чем падаль.\nГорький пасть хлеб торопливый. Функция табак процесс лапа функция ложиться. Крутой солнце еврейский легко.","estimatedTime":"2 week","previewFileId":"e6d03f9d-73a3-4d6d-9bba-7f5d3e36141a","createdByUserId":"8ef4a13f-b6e3-4887-bacd-135883163ba1"}'

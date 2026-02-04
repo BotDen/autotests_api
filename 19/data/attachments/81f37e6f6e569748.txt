@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjE2Ljk5OTg3MCIsInVzZXJfaWQiOiI5NjIwMDc4Yi01ZTQ4LTQ0OWItOWMzNC03OGU4YWRhMjhiYjYifQ.8qU-WJfF65ZX2qgOsERotfbXDNDJdVtACq8JjG0G21Y'\
+-H 'content-length: 461'\
+-H 'content-type: application/json'\
+-d '{"title":"Мальчишка инвалид светило табак дрогнуть радость инфекция.","maxScore":90,"minScore":30,"description":"Кпсс ручей пространство палец коллектив бочок. Потрясти нервно светило голубчик упор.","estimatedTime":"4 week","previewFileId":"eda23c27-cc6f-4fc0-82c9-9da43a1c6bd9","createdByUserId":"9620078b-5e48-449b-9c34-78e8ada28bb6"}'

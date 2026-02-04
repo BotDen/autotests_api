@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Make PATCH request to http://localhost:8000/api/v1/exercises/d0c625bc-31ba-447c-ae2b-6d78706c18d7
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises/d0c625bc-31ba-447c-ae2b-6d78706c18d7
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:104 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Командующий мальчишка наслаждение человечек тусклый.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 83
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 31
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'order_index' equals expected 25
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Изредка июнь слишком радость прежде назначить. Дыхание похороны зачем пол металл. Дурацкий пастух вариант развернуться падать ставить болото.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 5 week
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

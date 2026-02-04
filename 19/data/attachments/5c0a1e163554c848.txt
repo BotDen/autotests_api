@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA0VDIwOjQ1OjE2LjMzMDIzNSIsInVzZXJfaWQiOiIzOWIwMmJlYi0yOTVkLTRkMTgtYjhiOC01N2Q5MDZkNGFiZTEifQ.j-tompU051D_RUhXq0Xfar_ygtpmsDAmoBCS_dRMMHU'\
+-H 'content-length: 604'\
+-H 'content-type: application/json'\
+-d '{"title":"Задрать место пространство.","maxScore":56,"minScore":34,"description":"Тута степь степь. Виднеться тусклый тревога кпсс волк спорт а. Добиться около плод через штаб палата.\nРеклама ярко тюрьма полюбить научить через близко аллея. Видимо отметить успокоиться витрина.","estimatedTime":"9 week","previewFileId":"3793e9f1-f375-4cc1-b3ec-993d683625d4","createdByUserId":"39b02beb-295d-4d18-b8b8-57d906d4abe1"}'

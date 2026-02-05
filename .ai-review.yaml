@@ -20,4 +20,4 @@ prompt:
   summary_prompt_files: [ ./prompts/summary.md ]
 
 review:
-  dry_run: false
+  dry_run: False

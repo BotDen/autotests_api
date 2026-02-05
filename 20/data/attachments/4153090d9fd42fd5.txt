@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjM2LjIxNDkzOSIsInVzZXJfaWQiOiI5N2Y4ZGQ4YS1hYTcyLTRhOWYtYTkxZi02N2U1ZmVhY2VmZWEifQ.HW54vnOFkMWd8z-Z06qM0-hOCUTRx-AKN32LkKdua6M'\
+-H 'content-length: 674'\
+-H 'content-type: application/json'\
+-d '{"title":"Крыса мотоцикл да палата темнеть спичка поставить пробовать.","maxScore":77,"minScore":40,"description":"Построить аж металл набор способ. Вариант слать самостоятельно о. Сопровождаться нервно плавно возникновение приятель спичка. Засунуть полоска затянуться строительство видимо какой функция зеленый.","estimatedTime":"9 week","previewFileId":"be5e5d59-66bf-49b2-bb8b-c187cc0dabee","createdByUserId":"97f8dd8a-aa72-4a9f-a91f-67e5feacefea"}'

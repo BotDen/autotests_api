@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjM0LjE3OTkyNSIsInVzZXJfaWQiOiJjMzM5MmFhNi01YmI5LTQwOGQtYjJlOS0xOWQ2NTdhNDFiNmMifQ.8l0AGKMOo2m0TZX78B1UTP6XiRWijUz-8dn7aPaOyuA'\
+-H 'content-length: 451'\
+-H 'content-type: application/json'\
+-d '{"title":"Намерение народ рассуждение более интернет изучить более.","maxScore":57,"minScore":29,"description":"Правление что волк природа неожиданно. Мусор присесть рай палка сынок недостаток.","estimatedTime":"4 week","previewFileId":"5071297e-1985-4000-811b-9b0a2bb04f16","createdByUserId":"c3392aa6-5bb9-408d-b2e9-19d657a41b6c"}'

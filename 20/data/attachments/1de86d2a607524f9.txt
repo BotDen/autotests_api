@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/courses/a7cfabe6-2fe3-4c0b-8d13-45ba8c2358d7'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjMxLjUxMDQyMSIsInVzZXJfaWQiOiI5NjA0MDZmYy05NzRlLTRlZTQtODJiNC1iMGY2ZTg2ZjIyMzMifQ.tx1SlU5HEwuDEKMkuSd1fsOp7oWFYrGWYP1OEOHoj8A'\
+-H 'content-length: 416'\
+-H 'content-type: application/json'\
+-d '{"title":"Ночь иной белье актриса.","maxScore":71,"minScore":14,"description":"Тюрьма при степь даль блин кольцо страсть. Дорогой какой близко.\nПрелесть юный табак провал. Дальний белье пасть видимо пастух хотеть. Радость вариант костер.","estimatedTime":"8 week"}'

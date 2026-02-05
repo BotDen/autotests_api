@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjMxLjUxMDQyMSIsInVzZXJfaWQiOiI5NjA0MDZmYy05NzRlLTRlZTQtODJiNC1iMGY2ZTg2ZjIyMzMifQ.tx1SlU5HEwuDEKMkuSd1fsOp7oWFYrGWYP1OEOHoj8A'\
+-H 'content-length: 595'\
+-H 'content-type: application/json'\
+-d '{"title":"Июнь эффект нож набор очко единый.","maxScore":58,"minScore":31,"description":"Дремать отметить монета. Пространство развернуться призыв.\nВскинуть песенка зеленый вчера скользить тесно остановить. Спешить палец голубчик избегать трубка мелькнуть госпожа пламя.","estimatedTime":"8 week","previewFileId":"ab843e7e-676e-48f5-bf38-8cc6c684da63","createdByUserId":"960406fc-974e-4ee4-82b4-b0f6e86f2233"}'

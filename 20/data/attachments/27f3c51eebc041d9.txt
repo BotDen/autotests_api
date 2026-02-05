@@ -1,0 +1,24 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Make GET request to http://localhost:8000/api/v1/exercises?courseId=6f3c2e12-e6ca-4a9b-88b8-bad990e339dd
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=6f3c2e12-e6ca-4a9b-88b8-bad990e339dd
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:71 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:69 Check that lens of 'exercises' equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check exercise
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Рассуждение деньги уронить написать наткнуться низкий штаб.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'course_id' equals expected 6f3c2e12-e6ca-4a9b-88b8-bad990e339dd
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 88
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 12
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'order_index' equals expected 53
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Июнь неудобно степь хозяйка носок ломать изба. Столетие пища смелый граница пробовать ход школьный. Угроза банк бровь костер достоинство правый слать.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 6 week
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

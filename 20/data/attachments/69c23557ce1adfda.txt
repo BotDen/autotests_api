@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjM1LjUxODg2MCIsInVzZXJfaWQiOiJiYTk3MzI0Zi0xOTFjLTQ4OTMtYjllNS0yYTI5MTIwYzMwZTMifQ.o6IAjzG9qQYxaUEjjlCwKVZpFd-4SzL-QUdz2RVkq80'\
+-H 'content-length: 462'\
+-H 'content-type: application/json'\
+-d '{"title":"Появление выражение интеллектуальный правление бегать.","maxScore":95,"minScore":27,"description":"Приличный запретить дошлый художественный. Мучительно бок команда порода уронить монета.","estimatedTime":"7 week","previewFileId":"4662cddb-f91e-4959-8bb3-8ed32691b3b1","createdByUserId":"ba97324f-191c-4893-b9e5-2a29120c30e3"}'

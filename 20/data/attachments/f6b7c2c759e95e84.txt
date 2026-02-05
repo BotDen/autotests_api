@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjMzLjUxOTI0MyIsInVzZXJfaWQiOiJmMDBlOTBhYS1kZTRmLTRkYjQtYWU4Zi0zNzY4ZmFlN2ViZTQifQ.2ySyB-aV_r1N_s4oa0qZP2tYqs0c_X_PZFtF0DZidMM'\
+-H 'content-length: 623'\
+-H 'content-type: application/json'\
+-d '{"title":"Девка совещание число мусор механический валюта результат.","courseId":"e2dc61e1-5f85-4b18-9e76-e6ed777f6037","maxScore":88,"minScore":15,"orderIndex":98,"description":"Прежний передо разнообразный возможно теория монета кпсс одиннадцать.\nНеожиданно палата сходить умолять аж. Упорно рот салон кпсс. Следовательно изредка рабочий вздрогнуть сравнение пол основание.","estimatedTime":"5 week"}'

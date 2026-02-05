@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjM0Ljg0NTAzOCIsInVzZXJfaWQiOiI2ZDI0NjcwZi1lMzFkLTRiZDEtYjhlMC1jYzI5MzY0ODllNmMifQ.iWfbCyBsRZoeADpCXPcx1HPfl52gAqNAjayWTnWFIzU'\
+-H 'content-length: 582'\
+-H 'content-type: application/json'\
+-d '{"title":"Реклама оборот факультет упор.","maxScore":86,"minScore":49,"description":"Выдержать набор выразить добиться.\nЗаплакать недостаток пастух смертельный порода услать лететь. Командование термин проход армейский. Терапия при о термин сравнение мимо деньги.","estimatedTime":"2 week","previewFileId":"fbe94240-5dd3-412f-9838-447c99ee58cf","createdByUserId":"6d24670f-e31d-4bd1-b8e0-cc2936489e6c"}'

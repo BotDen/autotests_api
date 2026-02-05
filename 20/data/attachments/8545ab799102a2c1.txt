@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjM0OjMzLjUxOTI0MyIsInVzZXJfaWQiOiJmMDBlOTBhYS1kZTRmLTRkYjQtYWU4Zi0zNzY4ZmFlN2ViZTQifQ.2ySyB-aV_r1N_s4oa0qZP2tYqs0c_X_PZFtF0DZidMM'\
+-H 'content-length: 462'\
+-H 'content-type: application/json'\
+-d '{"title":"Правление цвет карандаш.","maxScore":94,"minScore":49,"description":"Теория тяжелый голубчик скользить функция. Слать естественный крутой коробка посидеть табак. Неправда висеть около блин.","estimatedTime":"7 week","previewFileId":"8a74ced5-7161-47cd-9716-0f2da876f710","createdByUserId":"f00e90aa-de4f-4db4-ae8f-3768fae7ebe4"}'

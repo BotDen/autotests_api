@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjAxLjQyMjgyNSIsInVzZXJfaWQiOiJlYTQ1OTdhOS0xYzEwLTQ5MDYtYjY1MC00Njc4NzYwZmJkYzEifQ.PzWWCddLcI5XOB_xwubMSEERrVtGYAMnPwCh8h1SLkU'\
+-H 'content-length: 644'\
+-H 'content-type: application/json'\
+-d '{"title":"Адвокат уничтожение налоговый возмутиться.","maxScore":50,"minScore":30,"description":"Анализ услать изредка белье беспомощный виднеться монета. Вариант домашний сынок соответствие. Процесс рабочий жидкий советовать решение.\nИзменение коллектив грустный. Труп добиться возможно вообще.","estimatedTime":"2 week","previewFileId":"a03381f3-7866-4252-9760-9df4f2aa14f2","createdByUserId":"ea4597a9-1c10-4906-b650-4678760fbdc1"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjA1LjM4NzU4MSIsInVzZXJfaWQiOiI3ZmMzYzhhZi1mZWY1LTQ2ZDgtYWU0YS00MWM4ZmU0M2IyMzEifQ.poFexHjBtliMWeopqvvEKdqwzLfbKehtcHZI742wsro'\
+-H 'content-length: 513'\
+-H 'content-type: application/json'\
+-d '{"title":"Промолчать способ каюта приличный рот жестокий.","maxScore":73,"minScore":15,"description":"Белье предоставить вздрогнуть костер. Посвятить блин достоинство угроза уронить. Умолять миг оборот находить роса пробовать.","estimatedTime":"7 week","previewFileId":"a7381ac4-273b-4066-bd07-84577bbe87e7","createdByUserId":"7fc3c8af-fef5-46d8-ae4a-41c8fe43b231"}'

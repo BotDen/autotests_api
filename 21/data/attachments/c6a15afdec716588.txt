@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjAyLjc1NzkwNyIsInVzZXJfaWQiOiI3MzUwZTMyNi1iMjNjLTRjYWUtOWMzNS1jNjYzZTMwM2U2ZmQifQ.yxQII7llggeXumby21pGKxJ6qWvZuam9BMRQZeHe11I'\
+-H 'content-length: 442'\
+-H 'content-type: application/json'\
+-d '{"title":"Столетие собеседник металл какой.","maxScore":55,"minScore":49,"description":"Ответить райком салон назначить провинция около ведь.\nОставить рота направо. Дружно решение вывести.","estimatedTime":"1 week","previewFileId":"6bec9f0d-d772-4034-93de-de4bc1c45612","createdByUserId":"7350e326-b23c-4cae-9c35-c663e303e6fd"}'

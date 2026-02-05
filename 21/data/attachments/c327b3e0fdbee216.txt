@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjAzLjQwODIyOSIsInVzZXJfaWQiOiJlNWRiNjUzOS03ZjI0LTRmNDUtYmY0ZC0yNmMzM2Q1M2RlYzEifQ.Em7tNyp7dxdDhJyosj9hNc4ZTSvnICIMozy0MIaeDrg'\
+-H 'content-length: 415'\
+-H 'content-type: application/json'\
+-d '{"title":"Да район валюта радость холодно предоставить исполнять ход.","courseId":"e42570a5-4b62-4c72-a7b9-9057f78c649f","maxScore":78,"minScore":41,"orderIndex":23,"description":"Пастух невыносимый встать прелесть. Вчера приятель волк невыносимый госпожа прежний.","estimatedTime":"4 week"}'

@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjA2LjA3NTI3MSIsInVzZXJfaWQiOiI5ODc2NTcyYy0zYmNlLTQ0NjktYTA5MS04MDFjN2IzOTk2ZTYifQ.HoFWU6ymZrEreMgqEH_1iVEEMhJAjr1EL7KOnYaagfM'\
+-H 'content-length: 624'\
+-H 'content-type: application/json'\
+-d '{"title":"Запустить пространство заплакать что.","maxScore":54,"minScore":37,"description":"Бочок нажать пространство лапа дальний изменение.\nСветило подземный ручей ребятишки неудобно решетка. Горький возбуждение рассуждение изображать. Жидкий приличный процесс изучить о промолчать.","estimatedTime":"3 week","previewFileId":"3be418f2-6f11-4e46-b23e-c021dc87f0db","createdByUserId":"9876572c-3bce-4469-a091-801c7b3996e6"}'

@@ -1,0 +1,24 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Make GET request to http://localhost:8000/api/v1/exercises/8623f4fe-5914-4143-859a-90c7a81a24e7
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/exercises/8623f4fe-5914-4143-859a-90c7a81a24e7
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:89 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:29 Check exercise
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Механический разнообразный спешить необычный монета полевой казнь.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'course_id' equals expected 739a9066-4d02-4620-a681-4facc916a0ad
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 75
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 7
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'order_index' equals expected 48
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Дрогнуть школьный возможно космос. Развитый жестокий очередной лиловый механический радость.
+Отъезд армейский терапия грустный монета. Салон выкинуть исполнять еврейский.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 3 week
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

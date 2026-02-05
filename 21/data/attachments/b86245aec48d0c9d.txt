@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjA0LjA2NzMwMiIsInVzZXJfaWQiOiJjOGFiOGY5Yy01YTZmLTQ3NWEtODA2OS01M2VkNWFlNGJlMDkifQ.k4z5n6kiRlXL5qYoxjFUvxa5dmeO-JCY1AjDAramktk'\
+-H 'content-length: 602'\
+-H 'content-type: application/json'\
+-d '{"title":"Горький налоговый запустить налоговый торопливый.","maxScore":57,"minScore":25,"description":"Космос командование сверкать видимо магазин. Очередной ломать новый возможно. Присесть чувство райком командир мрачно.\nПомимо вперед райком. Приятель сынок расстройство.","estimatedTime":"7 week","previewFileId":"16ab4c99-ae48-4426-bf04-8daf57bec2c4","createdByUserId":"c8ab8f9c-5a6f-475a-8069-53ed5ae4be09"}'

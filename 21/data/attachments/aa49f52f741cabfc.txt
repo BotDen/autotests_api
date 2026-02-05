@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/exercises'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjA0LjA2NzMwMiIsInVzZXJfaWQiOiJjOGFiOGY5Yy01YTZmLTQ3NWEtODA2OS01M2VkNWFlNGJlMDkifQ.k4z5n6kiRlXL5qYoxjFUvxa5dmeO-JCY1AjDAramktk'\
+-H 'content-length: 591'\
+-H 'content-type: application/json'\
+-d '{"title":"Механический разнообразный спешить необычный монета полевой казнь.","courseId":"739a9066-4d02-4620-a681-4facc916a0ad","maxScore":75,"minScore":7,"orderIndex":48,"description":"Дрогнуть школьный возможно космос. Развитый жестокий очередной лиловый механический радость.\nОтъезд армейский терапия грустный монета. Салон выкинуть исполнять еврейский.","estimatedTime":"3 week"}'

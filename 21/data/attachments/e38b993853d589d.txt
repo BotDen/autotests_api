@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:44 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals expected 200
+INFO     COURSES_ASSERTIONS:courses.py:88 Check create course response
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'title' equals expected Столетие собеседник металл какой.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'max_score' equals expected 55
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'min_score' equals expected 49
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'description' equals expected Ответить райком салон назначить провинция около ведь.
+Оставить рота направо. Дружно решение вывести.
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'estimated_time' equals expected 1 week
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'preview_file_id' equals expected 6bec9f0d-d772-4034-93de-de4bc1c45612
+INFO     BASE_ASSERTIONS:base.py:36 Check that 'created_by_user' equals expected 7350e326-b23c-4cae-9c35-c663e303e6fd
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validation JSON schema

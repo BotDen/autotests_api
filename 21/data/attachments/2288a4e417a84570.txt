@@ -1,0 +1,11 @@
+curl -X 'PATCH'\
+'http://localhost:8000/api/v1/courses/03a94851-c5ef-402f-88b1-3228e238ca19'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjAxLjQyMjgyNSIsInVzZXJfaWQiOiJlYTQ1OTdhOS0xYzEwLTQ5MDYtYjY1MC00Njc4NzYwZmJkYzEifQ.PzWWCddLcI5XOB_xwubMSEERrVtGYAMnPwCh8h1SLkU'\
+-H 'content-length: 430'\
+-H 'content-type: application/json'\
+-d '{"title":"Порог упор другой сынок.","maxScore":90,"minScore":24,"description":"Очередной предоставить тусклый кожа. Какой миллиард аллея намерение забирать.\nОсвободить эффект деловой страсть. Степь плод демократия горький проход приятель чем.","estimatedTime":"5 week"}'

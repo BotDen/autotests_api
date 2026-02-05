@@ -1,0 +1,11 @@
+curl -X 'POST'\
+'http://localhost:8000/api/v1/courses'\
+-H 'host: localhost:8000'\
+-H 'accept: */*'\
+-H 'accept-encoding: gzip, deflate'\
+-H 'connection: keep-alive'\
+-H 'user-agent: python-httpx/0.28.1'\
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTAyLTA1VDEwOjQxOjAzLjQwODIyOSIsInVzZXJfaWQiOiJlNWRiNjUzOS03ZjI0LTRmNDUtYmY0ZC0yNmMzM2Q1M2RlYzEifQ.Em7tNyp7dxdDhJyosj9hNc4ZTSvnICIMozy0MIaeDrg'\
+-H 'content-length: 640'\
+-H 'content-type: application/json'\
+-d '{"title":"Банк торопливый отражение заплакать неправда.","maxScore":68,"minScore":39,"description":"Казнь пища услать карман призыв. Командующий а упорно более видимо.\nТрясти даль отъезд бетонный развернуться невыносимый. Сынок неожиданный манера тысяча народ.\nВообще серьезный издали смеяться.","estimatedTime":"7 week","previewFileId":"38c62cd8-7341-42c2-b71b-dceb4f79aa7b","createdByUserId":"e5db6539-7f24-4f45-bf4d-26c33d53dec1"}'
